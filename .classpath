@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/sauce_java_common-2.1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/sauce_testng-2.1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/saucerest-1.0.19.jar"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/selenium-server-standalone-2.43.1.jar"/>
+	<classpathentry kind="lib" path="D:/Project/GIT/crm_appium/Lib/testng-6.8.8.jar"/>
+	<classpathentry kind="lib" path="Lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

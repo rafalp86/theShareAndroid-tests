@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+ <!-- Test Data -->
+<entry key="Email">mixer65@o2.pl</entry>
+<entry key="Password">123456</entry>
+<!-- App Data -->
+<entry key="RunLocal">False</entry>
+<entry key="SlideCount">5</entry>
+<entry key="favoriteFruit">pomegranate</entry>
+</properties>
