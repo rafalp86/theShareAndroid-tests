@@ -35,12 +35,13 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	//@BeforeSuite 
 	protected  WebDriver ConnectionWithApplication(String TestName) 
 	{   
-		authentication = new SauceOnDemandAuthentication("friendlysol","aa94af2b-1539-42c3-b804-590efaf1b51c");
+		
+		authentication = new SauceOnDemandAuthentication(appConfig.get("Username"),appConfig.get("AccessKey"));
 		driver= null;
 		try
 		{
 			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
-				new RemoteWebDriver(new URL("http://friendlysol:aa94af2b-1539-42c3-b804-590efaf1b51c@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
+				new RemoteWebDriver(new URL("http://"+appConfig.get("Username")+":"+appConfig.get("AccessKey")+"@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
 			
 		}
 		catch (Exception ex)
@@ -88,7 +89,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
    	   }
    	   else
    	   {
-   		   capabilities.setCapability("app","sauce-storage:Theshare.zip");
+   		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
    	   }
    	   capabilities.setCapability("name",testName);
        capabilities.setCapability("platformName","Android");       

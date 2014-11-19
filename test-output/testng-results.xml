@@ -2,32 +2,30 @@
 <testng-results skipped="0" failed="4" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62" started-at="2014-11-19T18:23:14Z" finished-at="2014-11-19T18:23:14Z">
+  <suite name="Default suite" duration-ms="81" started-at="2014-11-19T18:37:44Z" finished-at="2014-11-19T18:37:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62" started-at="2014-11-19T18:23:14Z" finished-at="2014-11-19T18:23:14Z">
+    <test name="Default test" duration-ms="81" started-at="2014-11-19T18:37:44Z" finished-at="2014-11-19T18:37:44Z">
       <class name="Tests.WhenLoginPanelIsDisplayed">
-        <test-method status="FAIL" signature="ConnectionWithApplication()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ConnectionWithApplication" is-config="true" duration-ms="0" started-at="2014-11-19T19:22:19Z" finished-at="2014-11-19T19:22:19Z">
+        <test-method status="FAIL" signature="ConnectionWithApplication()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ConnectionWithApplication" is-config="true" duration-ms="0" started-at="2014-11-19T19:34:49Z" finished-at="2014-11-19T19:34:49Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 205b8fd52a5e469eb04adcc17900b595 has already finished, and can't receive further commands
-You can learn more at https://saucelabs.com/jobs/205b8fd52a5e469eb04adcc17900b595
-For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 54.36 seconds
+              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.WebDriverException: The Sauce VMs failed to start the browser or device
+For more info, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 174.08 seconds
 Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
 System info: host: 'rafal', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 205b8fd52a5e469eb04adcc17900b595 has already finished, and can't receive further commands
-You can learn more at https://saucelabs.com/jobs/205b8fd52a5e469eb04adcc17900b595
-For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 54.36 seconds
+              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.WebDriverException: The Sauce VMs failed to start the browser or device
+For more info, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 174.08 seconds
 Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
 System info: host: 'rafal', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.Assert.fail(Assert.java:94)
-	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:48)
+	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:49)
 	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -53,15 +51,15 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConnectionWithApplication -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="setUp" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="setUp" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="ShoulDisplayLoginPanel()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ShoulDisplayLoginPanel" duration-ms="1" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="FAIL" signature="ShoulDisplayLoginPanel()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ShoulDisplayLoginPanel" duration-ms="2" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:117)
+	at Base.ShareBase.getSessionId(ShareBase.java:118)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
@@ -90,15 +88,15 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShoulDisplayLoginPanel -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplayAllCOntrols()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ShouldDisplayAllCOntrols" duration-ms="1" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="FAIL" signature="ShouldDisplayAllCOntrols()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ShouldDisplayAllCOntrols" duration-ms="1" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:117)
+	at Base.ShareBase.getSessionId(ShareBase.java:118)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
@@ -127,15 +125,15 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayAllCOntrols -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplayMessageWhenUserSendNotReginstedEmail()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ShouldDisplayMessageWhenUserSendNotReginstedEmail" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="FAIL" signature="ShouldDisplayMessageWhenUserSendNotReginstedEmail()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ShouldDisplayMessageWhenUserSendNotReginstedEmail" duration-ms="1" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:117)
+	at Base.ShareBase.getSessionId(ShareBase.java:118)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
@@ -164,15 +162,15 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayMessageWhenUserSendNotReginstedEmail -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldLogWhenUserEnterCorrectData()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ShouldLogWhenUserEnterCorrectData" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="FAIL" signature="ShouldLogWhenUserEnterCorrectData()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ShouldLogWhenUserEnterCorrectData" duration-ms="1" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:117)
+	at Base.ShareBase.getSessionId(ShareBase.java:118)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
@@ -201,11 +199,11 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldLogWhenUserEnterCorrectData -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="CloseConnection()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@8ba6621]" name="CloseConnection" is-config="true" duration-ms="0" started-at="2014-11-19T19:23:14Z" finished-at="2014-11-19T19:23:14Z">
+        <test-method status="SKIP" signature="CloseConnection()[pri:0, instance:Tests.WhenLoginPanelIsDisplayed@5870501]" name="CloseConnection" is-config="true" duration-ms="0" started-at="2014-11-19T19:37:44Z" finished-at="2014-11-19T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseConnection -->

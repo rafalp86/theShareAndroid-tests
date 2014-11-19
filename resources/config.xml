@@ -8,4 +8,8 @@
 <entry key="RunLocal">False</entry>
 <entry key="SlideCount">5</entry>
 <entry key="favoriteFruit">pomegranate</entry>
+<!-- sauce labs -->
+<entry key="Username">friendlysol</entry>
+<entry key="AccessKey">aa94af2b-1539-42c3-b804-590efaf1b51c</entry>
+<entry key="StorageApk">theshare.zip</entry>
 </properties>
