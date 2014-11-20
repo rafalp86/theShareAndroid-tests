@@ -21,12 +21,12 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
-		SetText(emailElemet, email_acount);
+		SetText(emailElemet, email_acount,true);
 		return this;
 	}
 	public LogInPage SetPassword(String password_acount)
 	{
-		SetText(passwordElement, password_acount);
+		SetText(passwordElement, password_acount,true);
 		return this;
 	}
 	
@@ -70,7 +70,7 @@ public class LogInPage extends UI{
 	// Elements Is Present
 	public boolean SkippButtonIsPresent()
 	{
-		return ElementExist(SkippButton,60);
+		return ElementExist(SkippButton);
 	}
 	public boolean SharingButtonIsPresent()
 	{
@@ -78,7 +78,7 @@ public class LogInPage extends UI{
 	}
 	public boolean FacebookButtonIsPresent()
 	{
-		return ElementExist(facebookButton,30);
+		return ElementExist(facebookButton);
 	}
 	public boolean CreateAccountButtonIsPresent()
 	{

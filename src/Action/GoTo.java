@@ -10,7 +10,7 @@ public class GoTo extends UI {
 	public static LogInPage LoginView()
 	{
 		if((new WallPage()).ShareElementIsPresent())
-		return	(new WallPage()).TapMainProfile().TapSettings().TapSettingsLogout();
+		return	(new WallPage()).TapYourProfile().TapSettings().TapSettingsLogout();
 			
 		return (new LogInPage()).TapXSkip();
 	}

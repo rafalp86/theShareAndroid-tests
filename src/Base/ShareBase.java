@@ -90,6 +90,8 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
    	   else
    	   {
    		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
+   		capabilities.setCapability("appium-version", "1.2");
+   		
    	   }
    	   capabilities.setCapability("name",testName);
        capabilities.setCapability("platformName","Android");       
@@ -101,8 +103,9 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
       // capabilities.setCapability("automationName", "appium");
        //capabilities.setCapability("device","appium");    
          
-       capabilities.setCapability("app-package", "com.example.theshare"); 
-       capabilities.setCapability("app-activity", ".activities.MainActivity"); 
+      capabilities.setCapability("app-package", "com.example.theshare"); 
+      capabilities.setCapability("app-activity", ".activities.MainActivity"); 
+      capabilities.setCapability("app-wait-activity",".activities.MainActivity");
          
        return capabilities;
       }

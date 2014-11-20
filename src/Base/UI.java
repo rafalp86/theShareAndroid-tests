@@ -139,13 +139,15 @@ public class UI extends ShareBase {
 		return text;
 	}
 	 
-	 public static void SetText(By element, String message) {
+	 public static void SetText(By element, String message,Boolean ... ClearContent) {
 			WebElement textBox= Find(element);
-			textBox.clear(); textBox.sendKeys(message);
+			if(ClearContent.length<0)  textBox.clear();
+			textBox.sendKeys(message);
 		}
 	 
-		public static void SetText(WebElement element, String message) {
-			element.clear(); element.sendKeys(message);
+		public static void SetText(WebElement element, String message,Boolean ... ClearContent) {
+			if(ClearContent.length<0)element.clear();
+			element.sendKeys(message);
 		}
 	
 	 

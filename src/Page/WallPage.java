@@ -20,37 +20,68 @@ public class WallPage extends UI{
 		  Click(MessageRespondElement);
 		  return this;
 	}
-	public WallPage  TapMainFilterFeed(){
+	public FilterPage  TapFilterFeed(){
 		 CloseGoogleService();
 		  Click(MainFilterFeedElement);
-		  return this;
+		  return new FilterPage();
 	}
-	public WallPage  TapMainShare(){
+	public SharePage  TapShare(){
 		 CloseGoogleService();
 		  Click(MainShareElement);
-		  return this;
+		  return new SharePage();
 	}
-	public YourProfilePage  TapMainProfile(){
+	public YourProfilePage  TapYourProfile(){
 		  CloseGoogleService();
 		  Click(MainProfileElement);
 		  return new YourProfilePage();
 	}
-	// 
+	public NotificationsPage  TapNotifications(){
+		  CloseGoogleService();
+		  Click(NotificationsElement);
+		  return new NotificationsPage();
+	}
+	
+	//  Element Is Present
 	public boolean ShareElementIsPresent()
 	{
 		CloseGoogleService();
 		return ElementExist(MainShareElement,60);
 	}
+	public boolean YourProfileIsPresent()
+	{
+		CloseGoogleService();
+		return ElementExist(MainProfileElement);
+	}
+	public boolean NotificationElementIsPresent()
+	{
+		CloseGoogleService();
+		return ElementExist(NotificationsElement);
+	}
+	public boolean MessageAutorIsPresent()
+	{
+		CloseGoogleService();
+		return ElementExist(MessageAutorElement);
+	}
+	public boolean MessageRespondIsPresent()
+	{
+		CloseGoogleService();
+		return ElementExist(MessageRespondElement);
+	}
+	public boolean MessageDataIsPresent()
+	{
+		CloseGoogleService();
+		return ElementExist(MessageDataElement);
+	}
 	
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
 	private By ActionNotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
-	private By NotificationsIconElement = GetBy.ResourceId("com.example.theshare:id/notifications_icon");
+	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/notifications_icon");
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
 	private By MainListElement = GetBy.ResourceId("com.example.theshare:id/main_list");
 	private By MessageAvatarElement = GetBy.ResourceId("com.example.theshare:id/message_avatar");
-	private By MessageNameElement = GetBy.ResourceId("com.example.theshare:id/message_name");
-	private By MessageWhenElement = GetBy.ResourceId("com.example.theshare:id/message_when");
+	private By MessageAutorElement = GetBy.ResourceId("com.example.theshare:id/message_name");
+	private By MessageDataElement = GetBy.ResourceId("com.example.theshare:id/message_when");
 	private By MessageFlagElement = GetBy.ResourceId("com.example.theshare:id/message_flag");
 	private By MessageContentElement = GetBy.ResourceId("com.example.theshare:id/message_content");
 	private By ImageFrameElement = GetBy.ResourceId("com.example.theshare:id/image_frame");

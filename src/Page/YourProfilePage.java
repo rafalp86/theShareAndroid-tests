@@ -8,6 +8,7 @@ import Base.UI;
 public class YourProfilePage extends UI {
 
 	
+	// TAP 
 	public YourProfilePage  TapProfileVideos(){
 	  Click(ProfileVideosElement);
 	  return this;
@@ -33,6 +34,11 @@ public class YourProfilePage extends UI {
 		  return new ProfileSetingsPage();
 	}
 	
+	// IS PRESENT
+	public boolean EditButonIsPresent()
+	{
+		return ElementExist(ProfileEditElement);
+	}
 	private By ActionSettingsElement = GetBy.ResourceId("com.example.theshare:id/action_settings");
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");

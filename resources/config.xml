@@ -5,7 +5,7 @@
 <entry key="Email">mixer65@o2.pl</entry>
 <entry key="Password">123456</entry>
 <!-- App Data -->
-<entry key="RunLocal">False</entry>
+<entry key="RunLocal">True</entry>
 <entry key="SlideCount">5</entry>
 <entry key="favoriteFruit">pomegranate</entry>
 <!-- sauce labs -->

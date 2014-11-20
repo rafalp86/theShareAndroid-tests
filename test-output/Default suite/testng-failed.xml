@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenLoginPanelIsDisplayed">
+      <class name="Tests.WhenUserLoginToApplication">
         <methods>
-          <include name="ShouldDisplayAllCOntrols"/>
-          <include name="ShouldLogWhenUserEnterCorrectData"/>
+          <include name="ShouldDisplayNameDateAndResponceButton"/>
+          <include name="ShouldGoToNotificationView"/>
           <include name="ConnectionWithApplication"/>
-          <include name="ShouldDisplayMessageWhenUserSendNotReginstedEmail"/>
-          <include name="ShoulDisplayLoginPanel"/>
+          <include name="ShouldGoToYourProfileView"/>
+          <include name="ShouldDisplayShareProfileAndNotificationButton"/>
+          <include name="ShouldGoToAddShareDialog"/>
+          <include name="ShouldGoToFilterFeedView"/>
         </methods>
-      </class> <!-- Tests.WhenLoginPanelIsDisplayed -->
+      </class> <!-- Tests.WhenUserLoginToApplication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
