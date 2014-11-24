@@ -30,7 +30,7 @@ public class Config {
 		properties = new Properties();
 	 
 		try {
-			File file = new File("resources\\config.xml");
+			File file = new File("config.xml");
 			FileInputStream fileInput = new FileInputStream(file);
 			properties.loadFromXML(fileInput);
 			fileInput.close();
