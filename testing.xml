@@ -4,7 +4,7 @@
   <test verbose="2" name="Default test">
     <classes>
       <class name="Tests.WhenUserRunApp"/>
-    
+      <class name="Tests.WhenLoginPanelIsDisplayed"/>
 
     </classes>
   </test> <!-- Default test -->
