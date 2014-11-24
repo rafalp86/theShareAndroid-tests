@@ -6,7 +6,9 @@
       <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
         <methods>
           <include name="tearDown"/>
-          <include name="PageShouldHaveFewParameters"/>
+          <include name="ScreenshotWhenFail"/>
+          <include name="BackToWallPage"/>
+          <include name="CheckboxInFilterShouldBeLinked" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Tests.WhenUserDisplayedAddNewTextMessageView -->
