@@ -71,8 +71,8 @@ public class LogInPage extends UI{
 	// Elements Is Present
 	public boolean SkippButtonIsPresent(Integer ...Timeout)
 	{
-		int timeout= Timeout.length>0?Timeout[0]:1;
-		return ElementExist(SkippButton,16);
+		int timeout= Timeout.length>0?Timeout[0]:5;
+		return ElementExist(SkippButton,timeout);
 	}
 	public boolean SharingButtonIsPresent()
 	{
@@ -105,7 +105,8 @@ public class LogInPage extends UI{
 	private By CreateAccountButton= GetBy.ResourceId("com.example.theshare:id/login_create_account");
 	private By LoginResetButton= GetBy.ResourceId("com.example.theshare:id/login_reset_password");
 	private By SlideImage = GetBy.className(Class.ImageView);
-	private By SkippButton= GetBy.ResourceId("com.example.theshare:id/button_skip");
+	private By SkippButton= GetBy.ResourceId("com.example.theshare:id/button_skip");//Class.ImageButton);
+											
 	private By SharingButton= GetBy.ClassAndText(Class.Button, "Start sharing now");
 	private By NotRegistered = GetBy.Text("User with this email is not registered.");
 			

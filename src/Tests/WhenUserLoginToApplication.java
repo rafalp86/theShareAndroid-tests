@@ -46,7 +46,7 @@ public class WhenUserLoginToApplication extends ShareBase {
 	}
 	@Test
 	public void ShouldGoToFilterFeedView()
-	{ //Sprawdziæ przejœcie do Filter Feed (Dodaæ sprawdzanie gdzie jestem
+	{ //Sprawdziæ przejœcie do Filter Feed 
 		FilterPage FilterView= WallView.TapFilterFeed();
 
 		Assert.assertTrue(FilterView.PageTitleIsPresent(),"Can not see Filter Page");

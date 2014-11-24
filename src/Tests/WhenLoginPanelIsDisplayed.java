@@ -1,6 +1,7 @@
 package Tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -56,5 +57,10 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 		
 	}
 	
+	 @AfterClass
+	    public void tearDown() {
+		  System.out.println("tearDown");
+		 	CloseConnection();
+	    }
 
 }

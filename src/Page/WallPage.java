@@ -12,7 +12,7 @@ public class WallPage extends UI{
 	// do usuniêcia po fixie
 	private void CloseGoogleService()
 	{
-		if (ElementExist(GetBy.Text("Get Google Play services"), 2)) Back();
+		if (ElementExist(GetBy.Text("Get Google Play services"), 1)) Back();
 	}
 	
 	public WallPage  TapMessageRespond(){
@@ -26,7 +26,7 @@ public class WallPage extends UI{
 		  return new FilterPage();
 	}
 	public SharePage  TapShare(){
-		 CloseGoogleService();
+		  CloseGoogleService();
 		  Click(MainShareElement);
 		  return new SharePage();
 	}
@@ -45,7 +45,7 @@ public class WallPage extends UI{
 	public boolean ShareElementIsPresent()
 	{
 		CloseGoogleService();
-		return ElementExist(MainShareElement);
+		return ElementExist(MainShareElement,1);
 	}
 	public boolean YourProfileIsPresent()
 	{
@@ -74,8 +74,9 @@ public class WallPage extends UI{
 	}
 	
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
-	private By ActionNotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
-	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/notifications_icon");
+	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
+	private By MainShareElement = GetBy.ResourceId("com.example.theshare:id/main_share");
+	//private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/notifications_icon");
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
 	private By MainListElement = GetBy.ResourceId("com.example.theshare:id/main_list");
@@ -91,6 +92,6 @@ public class WallPage extends UI{
 	private By MessageRelateTextElement = GetBy.ResourceId("com.example.theshare:id/message_relate_text");
 	private By MessageRespondElement = GetBy.ResourceId("com.example.theshare:id/message_respond");
 	private By MainFilterFeedElement = GetBy.ResourceId("com.example.theshare:id/main_filter_feed");
-	private By MainShareElement = GetBy.ResourceId("com.example.theshare:id/main_share");
+	
 	private By MainProfileElement = GetBy.ResourceId("com.example.theshare:id/main_profile");
 }

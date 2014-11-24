@@ -17,6 +17,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
+
+import sun.rmi.log.LogInputStream;
+
+import Page.LogInPage;
+
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
@@ -50,6 +55,8 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 			Assert.fail("Problem with create Webdrive instantion: "+ ex.toString());
 		}
 		 driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		 //Wait for start application
+		 (new LogInPage()).SkippButtonIsPresent(60);
 		System.out.println("Connect  with application");
 		System.out.println("Test :"+TestName);
 		return driver;
@@ -91,7 +98,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
    	   else
    	   {
    		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
-   		//capabilities.setCapability("appium-version", "1.2");
+   		   capabilities.setCapability("appium-version", "1.2");
    		
    	   }
    	   capabilities.setCapability("name",testName);

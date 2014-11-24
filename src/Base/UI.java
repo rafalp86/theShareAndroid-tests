@@ -156,6 +156,7 @@ public class UI extends ShareBase {
 	 public enum Class
 	 	{
 	    	  Button("android.widget.Button"),
+	    	  ImageButton("android.widget.ImageButton"),
 	    	  LinearLayout("android.widget.LinearLayout"),
 	    	  TextView("android.widget.TextView"),
 	    	  FrameLayout("android.widget.FrameLayout"),
