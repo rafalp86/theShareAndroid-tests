@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserLoginToApplication">
+      <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
         <methods>
-          <include name="setUp"/>
-          <include name="ScreenshotWhenFail"/>
           <include name="tearDown"/>
-          <include name="ShouldGoToYourProfileView"/>
-          <include name="BackToWallPage"/>
-          <include name="ShouldGoToAddShareDialog"/>
+          <include name="PageShouldHaveFewParameters"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.WhenUserLoginToApplication -->
+      </class> <!-- Tests.WhenUserDisplayedAddNewTextMessageView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

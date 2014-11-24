@@ -1,6 +1,8 @@
 package Page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import Base.GetBy;
 import Base.UI;
 import Action.Gestures;
@@ -21,18 +23,20 @@ public class WallPage extends UI{
 		  return this;
 	}
 	public FilterPage  TapFilterFeed(){
-		 CloseGoogleService();
+		  CloseGoogleService();
 		  Click(MainFilterFeedElement);
 		  return new FilterPage();
 	}
-	public SharePage  TapShare(){
-		  CloseGoogleService();
-		  Click(MainShareElement);
-		  return new SharePage();
+	public AddPostPage  TapShare(){
+		   CloseGoogleService();
+		   WebElement share= Finds(ShareButtont).get(1);
+		   share.click();
+		   
+		  return new AddPostPage();
 	}
 	public YourProfilePage  TapYourProfile(){
 		  CloseGoogleService();
-		  Click(MainProfileElement);
+		  WaitAndClick(MainProfileElement);
 		  return new YourProfilePage();
 	}
 	public NotificationsPage  TapNotifications(){
@@ -45,7 +49,7 @@ public class WallPage extends UI{
 	public boolean ShareElementIsPresent()
 	{
 		CloseGoogleService();
-		return ElementExist(MainShareElement,1);
+		return ElementExist(ShareButtont,1);
 	}
 	public boolean YourProfileIsPresent()
 	{
@@ -72,11 +76,12 @@ public class WallPage extends UI{
 		CloseGoogleService();
 		return ElementExist(MessageDataElement);
 	}
-	
+	//
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
 	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
-	private By MainShareElement = GetBy.ResourceId("com.example.theshare:id/main_share");
-	//private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/notifications_icon");
+	private By ShareButtont = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
+	private By MainProfileElement = GetBy.ResourceId("com.example.theshare:id/main_profile");
+	
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
 	private By MainListElement = GetBy.ResourceId("com.example.theshare:id/main_list");
@@ -93,5 +98,5 @@ public class WallPage extends UI{
 	private By MessageRespondElement = GetBy.ResourceId("com.example.theshare:id/message_respond");
 	private By MainFilterFeedElement = GetBy.ResourceId("com.example.theshare:id/main_filter_feed");
 	
-	private By MainProfileElement = GetBy.ResourceId("com.example.theshare:id/main_profile");
+	
 }

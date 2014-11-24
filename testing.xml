@@ -5,6 +5,7 @@
     <classes>
       <class name="Tests.WhenUserRunApp"/>
       <class name="Tests.WhenLoginPanelIsDisplayed"/>
+       <class name="Tests.WhenUserDisplayedAddNewTextMessageView"/>
 
     </classes>
   </test> <!-- Default test -->

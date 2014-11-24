@@ -24,13 +24,13 @@ public class WhenUserRunApp extends ShareBase {
 	@Test
 	public void ShouldDisplayCloseButtonInSlide()
 	{
-		 Assert.assertTrue(loginView.SkippButtonIsPresent(20),"Can not see the button to close X");
+		 Assert.assertTrue(loginView.SkippButtonIsPresent(20),"Can't see the button to close X");
 	}
 	
 	@Test
 	public void ShouldSwipAllSlideAndDisplaySharingButton()
 	{
-		Assert.assertTrue(loginView.SwipeAllSlide().SharingButtonIsPresent(),"Can not see [Start sharing now]");
+		Assert.assertTrue(loginView.SwipeAllSlide().SharingButtonIsPresent(),"Can't see [Start sharing now]");
 
 	}
 	

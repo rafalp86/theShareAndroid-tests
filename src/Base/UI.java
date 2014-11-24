@@ -60,6 +60,7 @@ public class UI extends ShareBase {
 		System.out.println("Click in  " +element);
 		driver.findElements(element).get(0).click();
 	}
+	
 	protected static void  ScrollAndClick(By element) {
 		Gestures.ScollTo(element);
 		Click(element);

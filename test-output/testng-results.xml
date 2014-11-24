@@ -1,51 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75365" started-at="2014-11-24T16:51:10Z" finished-at="2014-11-24T16:52:25Z">
+  <suite name="Default suite" duration-ms="80553" started-at="2014-11-24T19:35:23Z" finished-at="2014-11-24T19:36:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75365" started-at="2014-11-24T16:51:10Z" finished-at="2014-11-24T16:52:25Z">
-      <class name="Tests.WhenUserRunApp">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="setUp" is-config="true" duration-ms="49106" started-at="2014-11-24T17:51:10Z" finished-at="2014-11-24T17:51:59Z">
+    <test name="Default test" duration-ms="80553" started-at="2014-11-24T19:35:23Z" finished-at="2014-11-24T19:36:43Z">
+      <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="setUp" is-config="true" duration-ms="71585" started-at="2014-11-24T20:35:23Z" finished-at="2014-11-24T20:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ShouldDisplayCloseButtonInSlide()[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="ShouldDisplayCloseButtonInSlide" duration-ms="400" started-at="2014-11-24T17:51:59Z" finished-at="2014-11-24T17:51:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayCloseButtonInSlide -->
-        <test-method status="PASS" signature="ShouldSwipAllSlideAndDisplaySharingButton()[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="ShouldSwipAllSlideAndDisplaySharingButton" duration-ms="22550" started-at="2014-11-24T17:52:01Z" finished-at="2014-11-24T17:52:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldSwipAllSlideAndDisplaySharingButton -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-24T17:52:01Z" finished-at="2014-11-24T17:52:01Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="483" started-at="2014-11-24T20:36:34Z" data-provider="Filter" finished-at="2014-11-24T20:36:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShouldDisplayCloseButtonInSlide status=SUCCESS method=WhenUserRunApp.ShouldDisplayCloseButtonInSlide()[pri:0, instance:Tests.WhenUserRunApp@79a8885f] output={null}]]]>
+                <![CDATA[Entire Alumni Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-24T20:36:36Z" finished-at="2014-11-24T20:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-24T20:36:36Z" finished-at="2014-11-24T20:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-24T17:52:24Z" finished-at="2014-11-24T17:52:24Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="553" started-at="2014-11-24T20:36:36Z" data-provider="Filter" finished-at="2014-11-24T20:36:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShouldSwipAllSlideAndDisplaySharingButton status=SUCCESS method=WhenUserRunApp.ShouldSwipAllSlideAndDisplaySharingButton()[pri:0, instance:Tests.WhenUserRunApp@79a8885f] output={null}]]]>
+                <![CDATA[Entire Family Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-24T20:36:39Z" finished-at="2014-11-24T20:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:39Z" finished-at="2014-11-24T20:36:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserRunApp@79a8885f]" name="tearDown" is-config="true" duration-ms="1120" started-at="2014-11-24T17:52:24Z" finished-at="2014-11-24T17:52:25Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="563" started-at="2014-11-24T20:36:39Z" data-provider="Filter" finished-at="2014-11-24T20:36:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[People you are following]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:40Z" finished-at="2014-11-24T20:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:40Z" finished-at="2014-11-24T20:36:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="557" started-at="2014-11-24T20:36:40Z" data-provider="Filter" finished-at="2014-11-24T20:36:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[People following you]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:40Z" finished-at="2014-11-24T20:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-24T20:36:40Z" finished-at="2014-11-24T20:36:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="423" started-at="2014-11-24T20:36:40Z" data-provider="Filter" finished-at="2014-11-24T20:36:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Only with men]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:41Z" finished-at="2014-11-24T20:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-24T20:36:41Z" finished-at="2014-11-24T20:36:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="PageShouldHaveFewParameters" duration-ms="500" started-at="2014-11-24T20:36:41Z" data-provider="Filter" finished-at="2014-11-24T20:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select specific followers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveFewParameters -->
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:42Z" finished-at="2014-11-24T20:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-24T20:36:42Z" finished-at="2014-11-24T20:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Boolean)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@6359877c]" name="tearDown" is-config="true" duration-ms="1145" started-at="2014-11-24T20:36:42Z" finished-at="2014-11-24T20:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.WhenUserRunApp -->
+      </class> <!-- Tests.WhenUserDisplayedAddNewTextMessageView -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -25,16 +25,16 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 	@Test
 	public void ShoulDisplayLoginPanel()
 	{
-		Assert.assertTrue(loginView.LoginButtonIsPresent(),"Can not see [Login button]");
+		Assert.assertTrue(loginView.LoginButtonIsPresent(),"Can't see [Login button]");
 	}
 	
 	@Test
 	public void ShouldDisplayAllCOntrols()
 	{
-		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can not see [FacebookButton]");
-		Assert.assertTrue(loginView.CreateAccountButtonIsPresent(),"Can not see [CreateAccountButton]");
-		Assert.assertTrue(loginView.LoginResetButtonIsPresent(),"Can not see [LoginReset]");
-		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can not see [FacebookButton]");
+		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can't see [FacebookButton]");
+		Assert.assertTrue(loginView.CreateAccountButtonIsPresent(),"Can't see [CreateAccountButton]");
+		Assert.assertTrue(loginView.LoginResetButtonIsPresent(),"Can't see [LoginReset]");
+		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can't see [FacebookButton]");
 	}
 	
 	@Test
@@ -43,7 +43,7 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 		loginView.SetEmail("ReginstedEmail@fs.com")
 				 .SetPassword(appConfig.get("Password"))
 				 .TapLoginFailed();
-		//Assert.assertTrue(loginView.NotRegisteredMessageIsPresent(), "Can not see [User with this email is not registered]");
+		//Assert.assertTrue(loginView.NotRegisteredMessageIsPresent(), "Can't see [User with this email is not registered]");
 		
 	}
 	
@@ -53,7 +53,7 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 		WallPage HomeView= loginView.SetEmail(appConfig.get("Email"))
 				 .SetPassword(appConfig.get("Password"))
 				 .TapLogin();
-		Assert.assertTrue(HomeView.ShareElementIsPresent(), "Can not see [ShareElement]");
+		Assert.assertTrue(HomeView.ShareElementIsPresent(), "Can't see [ShareElement]");
 		
 	}
 	

@@ -1,6 +1,7 @@
 package Action;
 
 import Base.UI;
+import Page.AddPostPage;
 import Page.LogInPage;
 import Page.WallPage;
 
@@ -22,6 +23,11 @@ public class GoTo extends UI {
 				.SetEmail(appConfig.get("Email"))
 				.SetPassword(appConfig.get("Password"))
 				.TapLogin();
+	}
+	public static AddPostPage ComposeTextView()
+	{
+		return WallView().TapShare().TapTextMessage();
+
 	}
 
 	
