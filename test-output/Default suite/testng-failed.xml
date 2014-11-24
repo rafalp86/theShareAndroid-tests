@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserLoginToApplication">
+      <class name="Tests.WhenUserRunApp">
         <methods>
-          <include name="ShouldDisplayNameDateAndResponceButton"/>
-          <include name="ShouldGoToNotificationView"/>
-          <include name="ConnectionWithApplication"/>
-          <include name="ShouldGoToYourProfileView"/>
-          <include name="ShouldDisplayShareProfileAndNotificationButton"/>
-          <include name="ShouldGoToAddShareDialog"/>
-          <include name="ShouldGoToFilterFeedView"/>
+          <include name="setUp"/>
+          <include name="ShouldDisplayCloseButtonInSlide"/>
         </methods>
-      </class> <!-- Tests.WhenUserLoginToApplication -->
+      </class> <!-- Tests.WhenUserRunApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

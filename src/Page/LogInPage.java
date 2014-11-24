@@ -21,6 +21,7 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
+		WaitForElement(emailElemet, 5);
 		SetText(emailElemet, email_acount,true);
 		return this;
 	}
@@ -68,9 +69,10 @@ public class LogInPage extends UI{
 		return this;
 	}
 	// Elements Is Present
-	public boolean SkippButtonIsPresent()
+	public boolean SkippButtonIsPresent(Integer ...Timeout)
 	{
-		return ElementExist(SkippButton);
+		int timeout= Timeout.length>0?Timeout[0]:1;
+		return ElementExist(SkippButton,16);
 	}
 	public boolean SharingButtonIsPresent()
 	{

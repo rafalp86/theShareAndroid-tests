@@ -17,7 +17,7 @@ public class Gestures extends UI {
 		 swipeObject.put("endX", endX);
 		 swipeObject.put("endY", endY);
 		 swipeObject.put("duration", 3.0);
-		 UI. ExeciutJS("mobile: swipe", swipeObject);
+		 UI.ExeciutJS("mobile: swipe", swipeObject);
 		 }
 		 catch (Exception ex )
 		 {
@@ -54,4 +54,8 @@ public class Gestures extends UI {
 			}
 	}
 		
+	public static void Back()
+	{
+		UI.Back();
+	}
 }

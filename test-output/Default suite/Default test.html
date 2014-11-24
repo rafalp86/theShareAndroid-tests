@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 20 20:09:37 CET 2014</td>
+<td>Started on:</td><td>Mon Nov 24 12:30:18 CET 2014</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (31 ms)</td>
+<tr><td>Total time:</td><td>167 seconds (167168 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.WhenUserLoginToApplication.ConnectionWithApplication()'><b>ConnectionWithApplication</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 34.77 seconds
+<td title='Tests.WhenUserRunApp.setUp()'><b>setUp</b><br>Test class: Tests.WhenUserRunApp</td>
+<td><div><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.WebDriverException: The Sauce VMs failed to start the browser or device
+For more info, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 166.90 seconds
 Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
 System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.Assert.fail(Assert.java:94)
 	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:49)
-	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:33)
+	at Tests.WhenUserRunApp.setUp(WhenUserRunApp.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -92,7 +93,13 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -102,15 +109,16 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace820317001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace820317001'><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 34.77 seconds
+</pre></div><a href='#' onClick='toggleBox("stack-trace1351978313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1351978313'><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.WebDriverException: The Sauce VMs failed to start the browser or device
+For more info, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 166.90 seconds
 Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
 System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.Assert.fail(Assert.java:94)
 	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:49)
-	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:33)
+	at Tests.WhenUserRunApp.setUp(WhenUserRunApp.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -119,7 +127,13 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -131,7 +145,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>null</td></tr>
+<td>Tests.WhenUserRunApp@11e63f4a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -141,70 +155,10 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.WhenUserLoginToApplication.setUp()'><b>setUp</b><br>Test class: Tests.WhenUserLoginToApplication</td>
+<td title='Tests.WhenUserRunApp.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserRunApp</td>
 <td></td>
 <td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.BackToWallPage()'><b>BackToWallPage</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
+<td>Tests.WhenUserRunApp@11e63f4a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -214,7 +168,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldDisplayNameDateAndResponceButton()'><b>ShouldDisplayNameDateAndResponceButton</b><br>Test class: Tests.WhenUserLoginToApplication</td>
+<td title='Tests.WhenUserRunApp.ShouldDisplayCloseButtonInSlide()'><b>ShouldDisplayCloseButtonInSlide</b><br>Test class: Tests.WhenUserRunApp</td>
 <td><div><pre>java.lang.NullPointerException
 	at Base.ShareBase.getSessionId(ShareBase.java:121)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
@@ -239,8 +193,8 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace628519757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace628519757'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1701026516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1701026516'><pre>java.lang.NullPointerException
 	at Base.ShareBase.getSessionId(ShareBase.java:121)
 	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
@@ -266,277 +220,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldDisplayShareProfileAndNotificationButton()'><b>ShouldDisplayShareProfileAndNotificationButton</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace272238939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace272238939'><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldGoToAddShareDialog()'><b>ShouldGoToAddShareDialog</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1721695107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1721695107'><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldGoToFilterFeedView()'><b>ShouldGoToFilterFeedView</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1005835764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1005835764'><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldGoToNotificationView()'><b>ShouldGoToNotificationView</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1137520340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1137520340'><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
-<tr>
-<td title='Tests.WhenUserLoginToApplication.ShouldGoToYourProfileView()'><b>ShouldGoToYourProfileView</b><br>Test class: Tests.WhenUserLoginToApplication</td>
-<td><div><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace585842621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace585842621'><pre>java.lang.NullPointerException
-	at Base.ShareBase.getSessionId(ShareBase.java:121)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>Tests.WhenUserLoginToApplication@41604212</td></tr>
+<td>Tests.WhenUserRunApp@11e63f4a</td></tr>
 </table><p>
 </body>
 </html>

@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -28,11 +29,11 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	
 	protected  SauceOnDemandAuthentication authentication;
 	protected static WebDriver driver;
-	@BeforeSuite 
+	//@BeforeSuite 
 	protected  WebDriver ConnectionWithApplication() 
 	{ return ConnectionWithApplication("Test");}
 	
-	//@BeforeSuite 
+	
 	protected  WebDriver ConnectionWithApplication(String TestName) 
 	{   
 		
@@ -40,7 +41,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 		driver= null;
 		try
 		{
-			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
+			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test2")):
 				new RemoteWebDriver(new URL("http://"+appConfig.get("Username")+":"+appConfig.get("AccessKey")+"@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
 			
 		}
@@ -54,7 +55,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 		return driver;
 	}
 	
-	@AfterSuite
+	//@AfterClass
 	protected void CloseConnection()
 	{
 		driver.quit();
@@ -90,7 +91,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
    	   else
    	   {
    		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
-   		capabilities.setCapability("appium-version", "1.2");
+   		//capabilities.setCapability("appium-version", "1.2");
    		
    	   }
    	   capabilities.setCapability("name",testName);
@@ -100,12 +101,12 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
        capabilities.setCapability("platformVersion", "4.2");
        capabilities.setCapability("deviceType", "phone");
        
-      // capabilities.setCapability("automationName", "appium");
+       capabilities.setCapability("automationName", "appium");
        //capabilities.setCapability("device","appium");    
          
-      capabilities.setCapability("app-package", "com.example.theshare"); 
-      capabilities.setCapability("app-activity", ".activities.MainActivity"); 
-      capabilities.setCapability("app-wait-activity",".activities.MainActivity");
+      //capabilities.setCapability("app-package", "com.example.theshare"); 
+     // capabilities.setCapability("app-activity", ".activities.MainActivity"); 
+      //capabilities.setCapability("app-wait-activity",".activities.MainActivity");
          
        return capabilities;
       }

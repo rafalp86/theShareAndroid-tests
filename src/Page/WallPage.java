@@ -45,7 +45,7 @@ public class WallPage extends UI{
 	public boolean ShareElementIsPresent()
 	{
 		CloseGoogleService();
-		return ElementExist(MainShareElement,60);
+		return ElementExist(MainShareElement);
 	}
 	public boolean YourProfileIsPresent()
 	{

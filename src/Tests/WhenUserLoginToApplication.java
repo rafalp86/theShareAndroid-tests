@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import Action.Gestures;
 import Action.GoTo;
 import Base.ShareBase;
 import Page.FilterPage;
@@ -71,12 +72,10 @@ public class WhenUserLoginToApplication extends ShareBase {
 		Assert.assertTrue(ShareView.TextMessageIsPresent(),"Can not see TextMessage in dialog");
 	}
 	
-	
 	@AfterMethod
 	public void BackToWallPage()
 	{
-		System.out.println("");
-		if(!WallView.ShareElementIsPresent()) BackToWallPage();
+		if(!WallView.ShareElementIsPresent()) Gestures.Back();
 	}
 	
 }
