@@ -12,6 +12,7 @@ import Page.LogInPage;
 public class WhenUserRunApp extends ShareBase {
 	
 	private LogInPage loginView= new LogInPage();
+	
 	@BeforeClass
     public void setUp()
 	 {
@@ -23,7 +24,7 @@ public class WhenUserRunApp extends ShareBase {
 	@Test
 	public void ShouldDisplayCloseButtonInSlide()
 	{
-		 Assert.assertTrue(loginView.SkippButtonIsPresent(15),"Can not see the button to close X");
+		 Assert.assertTrue(loginView.SkippButtonIsPresent(20),"Can not see the button to close X");
 	}
 	
 	@Test

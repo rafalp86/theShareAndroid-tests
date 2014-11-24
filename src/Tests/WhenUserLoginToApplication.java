@@ -1,6 +1,7 @@
 package Tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -77,5 +78,11 @@ public class WhenUserLoginToApplication extends ShareBase {
 	{
 		if(!WallView.ShareElementIsPresent()) Gestures.Back();
 	}
+	
+	 @AfterClass
+	    public void tearDown() {
+		  System.out.println("tearDown");
+		 	CloseConnection();
+	    }
 	
 }

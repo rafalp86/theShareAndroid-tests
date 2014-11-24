@@ -98,7 +98,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
        capabilities.setCapability("platformName","Android");       
        //capabilities.setCapability("deviceName","LGOTMS1ab80a");     
        capabilities.setCapability("deviceName","Android Emulator");
-       capabilities.setCapability("platformVersion", "4.2");
+       capabilities.setCapability("platformVersion", "4.4");
        capabilities.setCapability("deviceType", "phone");
        
        capabilities.setCapability("automationName", "appium");
