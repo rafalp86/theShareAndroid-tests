@@ -94,27 +94,32 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	   	   File appDir = new File("resources");
 	       File app = new File(appDir, "theShare.apk");  
 	   	   capabilities.setCapability("app",app);
-   	   }
-   	   else
+   	   }else
    	   {
    		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
    		   capabilities.setCapability("appium-version", "1.2");
-   		
+   		   
    	   }
-   	   capabilities.setCapability("name",testName);
-       capabilities.setCapability("platformName","Android");       
-       //capabilities.setCapability("deviceName","LGOTMS1ab80a");     
+   	   
+   	   if (appConfig.getBool("RunSelendroid"))
+	   {
+		capabilities.setCapability("deviceName","LGOTMS1ab80a"); 
+		capabilities.setCapability("automationName", "selendroid");
+		capabilities.setCapability("platformVersion", "2.2");
+		capabilities.setCapability("app-package", "com.example.theshare"); 
+	    capabilities.setCapability("app-activity", ".activities.MainActivity"); 
+	    capabilities.setCapability("app-wait-activity",".activities.MainActivity");
+	   }
+   	   else
+   	   {
        capabilities.setCapability("deviceName","Android Emulator");
        capabilities.setCapability("platformVersion", "4.4");
-       capabilities.setCapability("deviceType", "phone");
+   	   }
        
-       capabilities.setCapability("automationName", "appium");
-       //capabilities.setCapability("device","appium");    
-         
-      //capabilities.setCapability("app-package", "com.example.theshare"); 
-     // capabilities.setCapability("app-activity", ".activities.MainActivity"); 
-      //capabilities.setCapability("app-wait-activity",".activities.MainActivity");
-         
+   	   capabilities.setCapability("name",testName);
+   	   capabilities.setCapability("platformName","Android");
+   	   capabilities.setCapability("deviceType", "phone");
+              
        return capabilities;
       }
 

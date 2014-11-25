@@ -21,12 +21,12 @@ public class WhenUserDisplayedAddNewTextMessageView extends ShareBase{
 		ConnectionWithApplication("WhenUserTryAddNewTextMessage");
 		AddMesageView =GoTo.ComposeTextView();
 	 }
-	//@Test
+	@Test
 	public void PageShouldHaveCorrectTitle()
 	{ //1.	Sprawdziæ czy ekran ma tytul „Compose text message..”
 		Assert.assertTrue(AddMesageView.PageTitleIsPresent(), "Can't see see [Compose text message] ");
 	}
-	//@Test
+	@Test
 	public void PageShouldHaveTextControlAndDoneButton()
 	{ //2.	Sprawdzic czy Elemety Done, pole tekstowe sa dostepne 
 		
@@ -34,7 +34,7 @@ public class WhenUserDisplayedAddNewTextMessageView extends ShareBase{
 		Assert.assertTrue(AddMesageView.MessageIsPresent(), "Can't see see [Message content] ");
 		
 	}
-//	@Test(dataProvider = "Filter")
+	@Test(dataProvider = "Filter")
 	public void PageShouldHaveFewParameters(String Filter,Integer notUsedparameter)
 	{ //3.	Sprawdziæ czy parametry "showe to" s¹ dostêpne (data Provider)
 		Assert.assertTrue(AddMesageView.FilterIsPresent(Filter), "Can't see see [Filter] ");		

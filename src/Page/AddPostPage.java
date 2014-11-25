@@ -18,16 +18,12 @@ public class AddPostPage extends UI {
 		  return new WallPage();
 	}
 	public AddPostPage  TapFilter(String FilterText){
-		  Click(FilterByText(FilterText));
+		  WaitAndClick(FilterByText(FilterText));
 		  return this;
 	}
 	public Integer GetCountCheckedFilter()
 	{
-		Integer checked= new Integer(0);
-		List<WebElement> allFilter= Finds(AllFillterCheckbox);
-		for(int i=0; i<allFilter.size();i++)
-			if(allFilter.get(i).isSelected()) checked++;
-		return checked;
+		return Finds(AllCheckedFillter).size();
 	}
 	//Set
 	public AddPostPage SetMessage(String messagetext)
@@ -57,7 +53,7 @@ public class AddPostPage extends UI {
 	private By ComposeTextArea= GetBy.ResourceId("com.example.theshare:id/compose_text");	
 	private By TitleElemet= GetBy.ClassAndText(Class.TextView, "Compose text message");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
-	private By AllFillterCheckbox= GetBy.ResourceId("com.example.theshare:id/filter_checkbox");
+	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");
 	
 	
 	//Choose  source Dialog
