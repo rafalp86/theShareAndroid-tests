@@ -45,12 +45,13 @@ public class Gestures extends UI {
 	{
 		String lastText="";
 		String currentText="";
+		org.openqa.selenium.Dimension FrameSize =driver.manage().window().getSize();
 		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(Class.TextView)).getText()))
 			{
 			currentText=FindLast(GetBy.className(Class.TextView)).getText();
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
-			Scroll(1.,720, 1., 1.);		
+			Scroll(1.,(double)FrameSize.height/2, 1., 1.);		
 			}
 	}
 		

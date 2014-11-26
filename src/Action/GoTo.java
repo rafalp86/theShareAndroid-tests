@@ -18,6 +18,9 @@ public class GoTo extends UI {
 	
 	public static WallPage WallView()
 	{
+		if((new WallPage()).NotificationElementIsPresentWithoutGoogle())
+			return new WallPage();
+		
 		return (new LogInPage())
 				.TapXSkip()
 				.SetEmail(appConfig.get("Email"))

@@ -61,6 +61,10 @@ public class WallPage extends UI{
 		CloseGoogleService();
 		return ElementExist(NotificationsElement);
 	}
+	public boolean NotificationElementIsPresentWithoutGoogle()
+	{
+		return ElementExist(NotificationsElement,1);
+	}
 	public boolean MessageAutorIsPresent()
 	{
 		CloseGoogleService();
@@ -76,11 +80,17 @@ public class WallPage extends UI{
 		CloseGoogleService();
 		return ElementExist(MessageDataElement);
 	}
+	public boolean MessageIsPresent(String MessageText)
+	{
+		CloseGoogleService();
+		return ElementExist(MessageBytext(MessageText));
+	}
 	//
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
 	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
 	private By ShareButtont = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
 	private By MainProfileElement = GetBy.ResourceId("com.example.theshare:id/main_profile");
+	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
 	
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");

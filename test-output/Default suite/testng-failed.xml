@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
+      <class name="Tests.WhenUserAddNewMessageToAppliaction">
         <methods>
-          <include name="PageShouldHaveCorrectTitle"/>
-          <include name="PageShouldHaveTextControlAndDoneButton"/>
-          <include name="CheckboxInFilterShouldBeLinked" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="PageShouldHaveFewParameters" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="ScreenshotWhenFail"/>
+          <include name="BackToWallPage"/>
+          <include name="AllMessageSchouldByPresentInWall" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.WhenUserDisplayedAddNewTextMessageView -->
+      </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

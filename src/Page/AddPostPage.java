@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import Action.Gestures;
 import Base.GetBy;
 import Base.UI;
 import Base.UI.Class;
@@ -21,6 +22,15 @@ public class AddPostPage extends UI {
 		  WaitAndClick(FilterByText(FilterText));
 		  return this;
 	}
+	public AddPostPage  TapSpecificFollowersFilter(){
+		String filterText="Select specific followers";
+		 List<WebElement> selectFiltes= Finds(AllCheckedFillter);
+		 for(int i=0; i<selectFiltes.size();i++)
+			 selectFiltes.get(i).click();
+	 
+		  Click(FilterByText(filterText));
+		  return this;
+	}
 	public Integer GetCountCheckedFilter()
 	{
 		return Finds(AllCheckedFillter).size();
@@ -28,7 +38,7 @@ public class AddPostPage extends UI {
 	//Set
 	public AddPostPage SetMessage(String messagetext)
 	{
-		SetText(ComposeTextArea, messagetext);
+		SetText(ComposeTextArea, messagetext,true);
 		return this;
 	}
 	//Present
@@ -48,12 +58,18 @@ public class AddPostPage extends UI {
 	{
 		return ElementExist(FilterByText(filterText));
 	}
+	public boolean SelectFollowerIsPresent()
+	{
+		Gestures.ScrollToEnd();
+		return ElementExist(SelectFollower);
+	}
 	//ELEMENTS
 	private By DoneButton= GetBy.ResourceId("com.example.theshare:id/button_done");	
 	private By ComposeTextArea= GetBy.ResourceId("com.example.theshare:id/compose_text");	
 	private By TitleElemet= GetBy.ClassAndText(Class.TextView, "Compose text message");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
 	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");
+	private By SelectFollower= GetBy.ResourceId("com.example.theshare:id/select_followers");	 
 	
 	
 	//Choose  source Dialog

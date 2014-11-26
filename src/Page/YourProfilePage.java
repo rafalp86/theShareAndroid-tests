@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import Base.GetBy;
 import Base.UI;
+import Base.UI.Class;
 
 public class YourProfilePage extends UI {
 
@@ -39,6 +40,13 @@ public class YourProfilePage extends UI {
 	{
 		return ElementExist(ProfileEditElement);
 	}
+	public boolean MessageIsPresent(String MessageText)
+	{
+		return ElementExist(MessageBytext(MessageText));
+	}
+	
+	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
+	
 	private By ActionSettingsElement = GetBy.ResourceId("com.example.theshare:id/action_settings");
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
