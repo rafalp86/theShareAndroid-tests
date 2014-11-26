@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import java.lang.reflect.Method;
 
 import Action.GoTo;
 import Base.ShareBase;
@@ -48,9 +49,12 @@ public class WhenUserDisplayedAddNewTextMessageView extends ShareBase{
 	}
 	
 	
-	
+	/**
+	* @param testMethod
+	* @return
+	*/
 	  @DataProvider(name = "Filter")
-	  public  Object[][] Filtertext() {
+	  public  Object[][] sauceBrowserDataProvider(Method testMethod) {
 	        return new Object[][]{
 	        		{"Entire Alumni Program",1},
 	        		{"Entire Family Program",2},

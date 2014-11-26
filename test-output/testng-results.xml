@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="103455" started-at="2014-11-25T19:36:08Z" finished-at="2014-11-25T19:37:52Z">
+  <suite name="Default suite" duration-ms="115058" started-at="2014-11-26T16:57:22Z" finished-at="2014-11-26T16:59:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="103455" started-at="2014-11-25T19:36:08Z" finished-at="2014-11-25T19:37:52Z">
+    <test name="Default test" duration-ms="115058" started-at="2014-11-26T16:57:22Z" finished-at="2014-11-26T16:59:17Z">
       <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="setUp" is-config="true" duration-ms="67316" started-at="2014-11-25T20:36:08Z" finished-at="2014-11-25T20:37:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="setUp" is-config="true" duration-ms="68932" started-at="2014-11-26T17:57:22Z" finished-at="2014-11-26T17:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="2851" started-at="2014-11-25T20:37:16Z" data-provider="Filter" finished-at="2014-11-25T20:37:18Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="3054" started-at="2014-11-26T17:58:31Z" data-provider="Filter" finished-at="2014-11-26T17:58:34Z">
           <params>
             <param index="0">
               <value>
@@ -27,22 +27,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:21Z" finished-at="2014-11-25T20:37:21Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:36Z" finished-at="2014-11-26T17:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-25T20:37:21Z" finished-at="2014-11-25T20:37:21Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-26T17:58:36Z" finished-at="2014-11-26T17:58:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="3044" started-at="2014-11-25T20:37:21Z" data-provider="Filter" finished-at="2014-11-25T20:37:24Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="2739" started-at="2014-11-26T17:58:36Z" data-provider="Filter" finished-at="2014-11-26T17:58:38Z">
           <params>
             <param index="0">
               <value>
@@ -58,22 +58,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:25Z" finished-at="2014-11-25T20:37:25Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:39Z" finished-at="2014-11-26T17:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:25Z" finished-at="2014-11-25T20:37:25Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:39Z" finished-at="2014-11-26T17:58:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="2716" started-at="2014-11-25T20:37:25Z" data-provider="Filter" finished-at="2014-11-25T20:37:28Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="2694" started-at="2014-11-26T17:58:39Z" data-provider="Filter" finished-at="2014-11-26T17:58:42Z">
           <params>
             <param index="0">
               <value>
@@ -89,22 +89,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:28Z" finished-at="2014-11-25T20:37:28Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:42Z" finished-at="2014-11-26T17:58:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:28Z" finished-at="2014-11-25T20:37:28Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:42Z" finished-at="2014-11-26T17:58:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="2862" started-at="2014-11-25T20:37:28Z" data-provider="Filter" finished-at="2014-11-25T20:37:31Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="3057" started-at="2014-11-26T17:58:42Z" data-provider="Filter" finished-at="2014-11-26T17:58:45Z">
           <params>
             <param index="0">
               <value>
@@ -120,22 +120,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:32Z" finished-at="2014-11-25T20:37:32Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:47Z" finished-at="2014-11-26T17:58:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:32Z" finished-at="2014-11-25T20:37:32Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:47Z" finished-at="2014-11-26T17:58:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="3121" started-at="2014-11-25T20:37:32Z" data-provider="Filter" finished-at="2014-11-25T20:37:35Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="2897" started-at="2014-11-26T17:58:47Z" data-provider="Filter" finished-at="2014-11-26T17:58:50Z">
           <params>
             <param index="0">
               <value>
@@ -151,22 +151,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:36Z" finished-at="2014-11-25T20:37:36Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:58:57Z" finished-at="2014-11-26T17:58:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:36Z" finished-at="2014-11-25T20:37:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="CheckboxInFilterShouldBeLinked" duration-ms="2821" started-at="2014-11-25T20:37:36Z" data-provider="Filter" finished-at="2014-11-25T20:37:39Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="CheckboxInFilterShouldBeLinked" duration-ms="2920" started-at="2014-11-26T17:58:57Z" data-provider="Filter" finished-at="2014-11-26T17:59:00Z">
           <params>
             <param index="0">
               <value>
@@ -182,41 +171,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckboxInFilterShouldBeLinked -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:39Z" finished-at="2014-11-25T20:37:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:39Z" finished-at="2014-11-25T20:37:39Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-26T17:58:57Z" finished-at="2014-11-26T17:58:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveCorrectTitle" duration-ms="518" started-at="2014-11-25T20:37:39Z" finished-at="2014-11-25T20:37:39Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:01Z" finished-at="2014-11-26T17:59:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:01Z" finished-at="2014-11-26T17:59:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveCorrectTitle" duration-ms="554" started-at="2014-11-26T17:59:01Z" finished-at="2014-11-26T17:59:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveCorrectTitle -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:40Z" finished-at="2014-11-25T20:37:40Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:02Z" finished-at="2014-11-26T17:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:40Z" finished-at="2014-11-25T20:37:40Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:02Z" finished-at="2014-11-26T17:59:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveCorrectTitle status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveCorrectTitle status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="587" started-at="2014-11-25T20:37:40Z" data-provider="Filter" finished-at="2014-11-25T20:37:40Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="690" started-at="2014-11-26T17:59:02Z" data-provider="Filter" finished-at="2014-11-26T17:59:03Z">
           <params>
             <param index="0">
               <value>
@@ -232,22 +232,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:40Z" finished-at="2014-11-25T20:37:40Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:03Z" finished-at="2014-11-26T17:59:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:40Z" finished-at="2014-11-25T20:37:40Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:03Z" finished-at="2014-11-26T17:59:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="670" started-at="2014-11-25T20:37:40Z" data-provider="Filter" finished-at="2014-11-25T20:37:41Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="511" started-at="2014-11-26T17:59:03Z" data-provider="Filter" finished-at="2014-11-26T17:59:03Z">
           <params>
             <param index="0">
               <value>
@@ -263,22 +263,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:41Z" finished-at="2014-11-25T20:37:41Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:04Z" finished-at="2014-11-26T17:59:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:04Z" finished-at="2014-11-26T17:59:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:41Z" finished-at="2014-11-25T20:37:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="460" started-at="2014-11-25T20:37:41Z" data-provider="Filter" finished-at="2014-11-25T20:37:42Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="458" started-at="2014-11-26T17:59:04Z" data-provider="Filter" finished-at="2014-11-26T17:59:04Z">
           <params>
             <param index="0">
               <value>
@@ -294,22 +294,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:42Z" finished-at="2014-11-25T20:37:42Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:06Z" finished-at="2014-11-26T17:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:06Z" finished-at="2014-11-26T17:59:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:42Z" finished-at="2014-11-25T20:37:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="487" started-at="2014-11-25T20:37:42Z" data-provider="Filter" finished-at="2014-11-25T20:37:43Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="444" started-at="2014-11-26T17:59:06Z" data-provider="Filter" finished-at="2014-11-26T17:59:06Z">
           <params>
             <param index="0">
               <value>
@@ -325,22 +325,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:46Z" finished-at="2014-11-25T20:37:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:46Z" finished-at="2014-11-25T20:37:46Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:10Z" finished-at="2014-11-26T17:59:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="431" started-at="2014-11-25T20:37:46Z" data-provider="Filter" finished-at="2014-11-25T20:37:47Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:10Z" finished-at="2014-11-26T17:59:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="478" started-at="2014-11-26T17:59:10Z" data-provider="Filter" finished-at="2014-11-26T17:59:11Z">
           <params>
             <param index="0">
               <value>
@@ -356,22 +356,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:47Z" finished-at="2014-11-25T20:37:47Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:14Z" finished-at="2014-11-26T17:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToWallPage -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:14Z" finished-at="2014-11-26T17:59:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:47Z" finished-at="2014-11-25T20:37:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveFewParameters" duration-ms="472" started-at="2014-11-25T20:37:47Z" data-provider="Filter" finished-at="2014-11-25T20:37:47Z">
+        <test-method status="PASS" signature="PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveFewParameters" duration-ms="584" started-at="2014-11-26T17:59:14Z" data-provider="Filter" finished-at="2014-11-26T17:59:14Z">
           <params>
             <param index="0">
               <value>
@@ -387,41 +387,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveFewParameters -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:48Z" finished-at="2014-11-25T20:37:48Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:14Z" finished-at="2014-11-26T17:59:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:48Z" finished-at="2014-11-25T20:37:48Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:14Z" finished-at="2014-11-26T17:59:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveFewParameters status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="PageShouldHaveTextControlAndDoneButton()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="PageShouldHaveTextControlAndDoneButton" duration-ms="1156" started-at="2014-11-25T20:37:48Z" finished-at="2014-11-25T20:37:50Z">
+        <test-method status="PASS" signature="PageShouldHaveTextControlAndDoneButton()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="PageShouldHaveTextControlAndDoneButton" duration-ms="903" started-at="2014-11-26T17:59:14Z" finished-at="2014-11-26T17:59:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageShouldHaveTextControlAndDoneButton -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-11-25T20:37:50Z" finished-at="2014-11-25T20:37:50Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="BackToWallPage" is-config="true" duration-ms="1" started-at="2014-11-26T17:59:16Z" finished-at="2014-11-26T17:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-25T20:37:50Z" finished-at="2014-11-25T20:37:50Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-26T17:59:16Z" finished-at="2014-11-26T17:59:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PageShouldHaveTextControlAndDoneButton status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveTextControlAndDoneButton()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8] output={null}]]]>
+                <![CDATA[[TestResult name=PageShouldHaveTextControlAndDoneButton status=SUCCESS method=WhenUserDisplayedAddNewTextMessageView.PageShouldHaveTextControlAndDoneButton()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@67aff9e8]" name="tearDown" is-config="true" duration-ms="1207" started-at="2014-11-25T20:37:50Z" finished-at="2014-11-25T20:37:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserDisplayedAddNewTextMessageView@3173175]" name="tearDown" is-config="true" duration-ms="1196" started-at="2014-11-26T17:59:16Z" finished-at="2014-11-26T17:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
