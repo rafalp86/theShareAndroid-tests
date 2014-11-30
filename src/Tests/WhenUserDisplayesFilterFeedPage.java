@@ -3,6 +3,7 @@ package Tests;
 import java.lang.reflect.Method;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -57,5 +58,11 @@ public class WhenUserDisplayesFilterFeedPage extends ShareBase {
 	        		{"All videos from Alumni Program",2},
 	        		{"All videos form Family Program",3}};
 	        
+	    }
+	  
+	  @AfterClass
+	    public void tearDown() {
+		  System.out.println("tearDown");
+		 	CloseConnection();
 	    }
 }
