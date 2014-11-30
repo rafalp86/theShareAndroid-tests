@@ -28,7 +28,7 @@ public class WhenUserAddNewMessageToAppliaction extends ShareBase {
 	 {
 		ConnectionWithApplication("WhenUserTryAddNewTextMessage");
 	 }
-
+	@Test
 	public void MessageSchouldByPresentInWall()
 	{
 		Assert.assertTrue(Add
@@ -46,7 +46,7 @@ public class WhenUserAddNewMessageToAppliaction extends ShareBase {
 				.MessageIsPresent(testMessage)
 				,"Can't see [message "+testMessage+" in Profile view]");
 	}
-	@Test(dataProvider="MessageGenerator")
+	//@Test(dataProvider="MessageGenerator")
 	public void AllMessageSchouldByPresentInWall(String message,Integer notUsedparameter)
 	{
 		Assert.assertTrue(Add

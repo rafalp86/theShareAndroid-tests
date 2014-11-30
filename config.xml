@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <!-- Test Data -->
-<entry key="Email">mixer65@o2.pl</entry>
-<entry key="Password">123456</entry>
-<!-- App Data -->
+    <!-- App Data -->
 <entry key="RunLocal">False</entry>
 <entry key="RunSelendroid">False</entry>
 <entry key="SlideCount">5</entry>
-<entry key="favoriteFruit">pomegranate</entry>
+ <!-- Test Data -->
+<entry key="Email">mixer65@o2.pl</entry>
+<entry key="Password">123456</entry>
 <!-- sauce labs -->
 <entry key="Username">friendlysol</entry>
 <entry key="AccessKey">aa94af2b-1539-42c3-b804-590efaf1b51c</entry>

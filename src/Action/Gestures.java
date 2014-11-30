@@ -2,6 +2,10 @@ package Action;
 
 import java.util.HashMap;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+
+import com.gargoylesoftware.htmlunit.javascript.host.arrays.Uint16Array;
+
 import Base.GetBy;
 import Base.UI;
 
@@ -52,6 +56,21 @@ public class Gestures extends UI {
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
 			Scroll(1.,(double)FrameSize.height/2, 1., 1.);		
+			}
+	}
+	public static void ScrollToTop(UI.Class ...ElementType)
+	{
+		String lastText="";
+		String currentText="";
+		Class type=ElementType.length>0?ElementType[0]:Class.TextView;
+		Dimension FrameSize =driver.manage().window().getSize();
+		
+		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(type)).getText()))
+			{
+			currentText=FindLast(GetBy.className(type)).getText();
+			System.out.println("C :"+currentText+" L:"+lastText);
+			lastText=currentText;
+			Scroll(1.,(double)FrameSize.height/3, 1., (double)FrameSize.height-5);		
 			}
 	}
 		

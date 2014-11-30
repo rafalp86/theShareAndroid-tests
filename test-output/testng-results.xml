@@ -1,191 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="222228" started-at="2014-11-26T19:30:34Z" finished-at="2014-11-26T19:34:17Z">
+  <suite name="Default suite" duration-ms="107325" started-at="2014-11-30T17:51:26Z" finished-at="2014-11-30T17:53:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="222228" started-at="2014-11-26T19:30:34Z" finished-at="2014-11-26T19:34:17Z">
+    <test name="Default test" duration-ms="107325" started-at="2014-11-30T17:51:26Z" finished-at="2014-11-30T17:53:13Z">
       <class name="Tests.WhenUserAddNewMessageToAppliaction">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="setUp" is-config="true" duration-ms="44149" started-at="2014-11-26T20:30:34Z" finished-at="2014-11-26T20:31:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="setUp" is-config="true" duration-ms="40854" started-at="2014-11-30T18:51:26Z" finished-at="2014-11-30T18:52:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="AllMessageSchouldByPresentInWall" duration-ms="41947" started-at="2014-11-26T20:31:19Z" data-provider="MessageGenerator" finished-at="2014-11-26T20:32:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test link https://github.com/saucelabs/sauce-java/blob/master/testng/src/test/java/com/saucelabs/testng/SampleSauceTest.java]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllMessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="455" started-at="2014-11-26T20:32:02Z" finished-at="2014-11-26T20:32:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-26T20:32:03Z" finished-at="2014-11-26T20:32:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllMessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="AllMessageSchouldByPresentInWall" duration-ms="24633" started-at="2014-11-26T20:32:03Z" data-provider="MessageGenerator" finished-at="2014-11-26T20:32:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllMessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="491" started-at="2014-11-26T20:32:28Z" finished-at="2014-11-26T20:32:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T20:32:29Z" finished-at="2014-11-26T20:32:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllMessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="AllMessageSchouldByPresentInWall" duration-ms="23788" started-at="2014-11-26T20:32:29Z" data-provider="MessageGenerator" finished-at="2014-11-26T20:32:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[#autotest $23]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllMessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="472" started-at="2014-11-26T20:32:54Z" finished-at="2014-11-26T20:32:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T20:32:55Z" finished-at="2014-11-26T20:32:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllMessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="AllMessageSchouldByPresentInWall" duration-ms="24013" started-at="2014-11-26T20:32:55Z" data-provider="MessageGenerator" finished-at="2014-11-26T20:33:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[long text test test test test test test test test test test test test test test test test test test test test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllMessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="504" started-at="2014-11-26T20:33:21Z" finished-at="2014-11-26T20:33:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T20:33:21Z" finished-at="2014-11-26T20:33:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllMessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="AllMessageSchouldByPresentInWall" duration-ms="23364" started-at="2014-11-26T20:33:21Z" data-provider="MessageGenerator" finished-at="2014-11-26T20:33:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[<iframe src="www.wp.pl"></iframe>]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllMessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="508" started-at="2014-11-26T20:33:47Z" finished-at="2014-11-26T20:33:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-26T20:33:47Z" finished-at="2014-11-26T20:33:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllMessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.AllMessageSchouldByPresentInWall(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="MessageSchouldByPresentInProfileViewList" duration-ms="26848" started-at="2014-11-26T20:33:47Z" finished-at="2014-11-26T20:34:14Z">
+        <test-method status="PASS" signature="MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="MessageSchouldByPresentInProfileViewList" duration-ms="62795" started-at="2014-11-30T18:52:07Z" finished-at="2014-11-30T18:53:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageSchouldByPresentInProfileViewList -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="BackToWallPage" is-config="true" duration-ms="478" started-at="2014-11-26T20:34:15Z" finished-at="2014-11-26T20:34:15Z">
+        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="BackToWallPage" is-config="true" duration-ms="505" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-26T20:34:15Z" finished-at="2014-11-26T20:34:15Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MessageSchouldByPresentInProfileViewList status=SUCCESS method=WhenUserAddNewMessageToAppliaction.MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109] output={null}]]]>
+                <![CDATA[[TestResult name=MessageSchouldByPresentInProfileViewList status=SUCCESS method=WhenUserAddNewMessageToAppliaction.MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3adbe109]" name="tearDown" is-config="true" duration-ms="1154" started-at="2014-11-26T20:34:15Z" finished-at="2014-11-26T20:34:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="tearDown" is-config="true" duration-ms="1083" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

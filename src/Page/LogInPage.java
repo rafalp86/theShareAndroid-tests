@@ -21,13 +21,14 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
+		Gestures.ScrollToTop(Class.Button);
 		WaitForElement(emailElemet, 5);
-		SetText(emailElemet, email_acount,true);
+		SetText(emailElemet, email_acount);
 		return this;
 	}
 	public LogInPage SetPassword(String password_acount)
 	{
-		SetText(passwordElement, password_acount,true);
+		SetText(passwordElement, password_acount);
 		return this;
 	}
 	

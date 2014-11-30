@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserAddNewMessageToAppliaction">
+      <class name="Tests.WhenLoginPanelIsDisplayed">
         <methods>
-          <include name="ScreenshotWhenFail"/>
-          <include name="BackToWallPage"/>
-          <include name="AllMessageSchouldByPresentInWall" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="ShouldLogWhenUserEnterCorrectData"/>
+          <include name="ScreenshotWhenFail"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
+      </class> <!-- Tests.WhenLoginPanelIsDisplayed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

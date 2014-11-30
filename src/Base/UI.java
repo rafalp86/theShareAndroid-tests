@@ -143,7 +143,8 @@ public class UI extends ShareBase {
 	 public static void SetText(By element, String message,Boolean ... ClearContent) {
 		    System.out.println("Set tekst in "+ element+" ="+message);
 			WebElement textBox= Find(element);
-			if(ClearContent.length<0)  textBox.clear();
+			//if(ClearContent.length<0)  textBox.clear();
+			textBox.clear();
 			textBox.sendKeys(message);
 		}
 	 
