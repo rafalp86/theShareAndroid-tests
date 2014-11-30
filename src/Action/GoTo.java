@@ -2,6 +2,7 @@ package Action;
 
 import Base.UI;
 import Page.AddPostPage;
+import Page.FilterPage;
 import Page.LogInPage;
 import Page.WallPage;
 
@@ -33,6 +34,10 @@ public class GoTo extends UI {
 	{
 		return WallView().TapShare().TapTextMessage();
 
+	}
+	public static FilterPage FilterView()
+	{
+		return WallView().TapFilterFeed();
 	}
 
 	

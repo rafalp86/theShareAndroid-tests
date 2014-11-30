@@ -71,8 +71,10 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	
 	protected  void Screenshot(String fileName) {
         try {
-        
-            FileOutputStream out = new FileOutputStream(fileName + "_TheShare.png");
+        	File screenshotDir = new File("Screenshot");
+        	if (!screenshotDir.exists()) screenshotDir.mkdir();
+        	
+            FileOutputStream out = new FileOutputStream("Screenshot/"+fileName + "_TheShare.png");
             out.write(((org.openqa.selenium.TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             out.close();
         } catch (Exception e) {
@@ -107,8 +109,8 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 		capabilities.setCapability("automationName", "selendroid");
 		capabilities.setCapability("platformVersion", "2.2");
 		capabilities.setCapability("app-package", "com.example.theshare"); 
-	    capabilities.setCapability("app-activity", ".activities.MainActivity"); 
-	    capabilities.setCapability("app-wait-activity",".activities.MainActivity");
+	    capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
+	    capabilities.setCapability("app-wait-activity",".activities.WelcomeFragmentActivity");
 	   }
    	   else
    	   {

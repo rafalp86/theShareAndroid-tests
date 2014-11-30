@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenLoginPanelIsDisplayed">
+      <class name="Tests.WhenUserDisplayesFilterFeedPage">
         <methods>
-          <include name="setUp"/>
-          <include name="ShouldLogWhenUserEnterCorrectData"/>
           <include name="ScreenshotWhenFail"/>
-          <include name="tearDown"/>
+          <include name="CheckboxInFilterShouldBeLinked" invocation-numbers="1"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.WhenLoginPanelIsDisplayed -->
+      </class> <!-- Tests.WhenUserDisplayesFilterFeedPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

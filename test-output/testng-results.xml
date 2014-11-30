@@ -1,40 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="107325" started-at="2014-11-30T17:51:26Z" finished-at="2014-11-30T17:53:13Z">
+  <suite name="Default suite" duration-ms="104641" started-at="2014-11-30T18:59:17Z" finished-at="2014-11-30T19:01:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="107325" started-at="2014-11-30T17:51:26Z" finished-at="2014-11-30T17:53:13Z">
-      <class name="Tests.WhenUserAddNewMessageToAppliaction">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="setUp" is-config="true" duration-ms="40854" started-at="2014-11-30T18:51:26Z" finished-at="2014-11-30T18:52:07Z">
+    <test name="Default test" duration-ms="104641" started-at="2014-11-30T18:59:17Z" finished-at="2014-11-30T19:01:02Z">
+      <class name="Tests.WhenUserDisplayesFilterFeedPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="setUp" is-config="true" duration-ms="80617" started-at="2014-11-30T19:59:17Z" finished-at="2014-11-30T20:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="MessageSchouldByPresentInProfileViewList" duration-ms="62795" started-at="2014-11-30T18:52:07Z" finished-at="2014-11-30T18:53:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MessageSchouldByPresentInProfileViewList -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="BackToWallPage" is-config="true" duration-ms="505" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:12Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="1287" started-at="2014-11-30T20:00:38Z" data-provider="Filter" finished-at="2014-11-30T20:00:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MessageSchouldByPresentInProfileViewList status=SUCCESS method=WhenUserAddNewMessageToAppliaction.MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f] output={null}]]]>
+                <![CDATA[All videos from Alumni Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-30T20:00:42Z" finished-at="2014-11-30T20:00:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@3993340f]" name="tearDown" is-config="true" duration-ms="1083" started-at="2014-11-30T18:53:12Z" finished-at="2014-11-30T18:53:13Z">
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="1299" started-at="2014-11-30T20:00:42Z" data-provider="Filter" finished-at="2014-11-30T20:00:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[All videos form Family Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-30T20:00:45Z" finished-at="2014-11-30T20:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="918" started-at="2014-11-30T20:00:45Z" data-provider="Filter" finished-at="2014-11-30T20:00:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Most popular shares]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-30T20:00:47Z" finished-at="2014-11-30T20:00:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="780" started-at="2014-11-30T20:00:47Z" data-provider="Filter" finished-at="2014-11-30T20:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[People you are following]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-30T20:00:48Z" finished-at="2014-11-30T20:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="829" started-at="2014-11-30T20:00:48Z" data-provider="Filter" finished-at="2014-11-30T20:00:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[People following you]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="902" started-at="2014-11-30T20:00:50Z" data-provider="Filter" finished-at="2014-11-30T20:00:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Only with men]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-30T20:00:50Z" finished-at="2014-11-30T20:00:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-30T20:00:53Z" finished-at="2014-11-30T20:00:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="1442" started-at="2014-11-30T20:00:53Z" data-provider="Filter" finished-at="2014-11-30T20:00:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[All videos from Alumni Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-30T20:00:55Z" finished-at="2014-11-30T20:00:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="CheckboxInFilterShouldBeLinked" duration-ms="1060" started-at="2014-11-30T20:00:55Z" data-provider="Filter" finished-at="2014-11-30T20:00:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[All videos form Family Program]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxInFilterShouldBeLinked -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-30T20:00:57Z" finished-at="2014-11-30T20:00:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckboxInFilterShouldBeLinked status=SUCCESS method=WhenUserDisplayesFilterFeedPage.CheckboxInFilterShouldBeLinked(java.lang.String, java.lang.Integer)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="PageShouldHaveCorrectTitle" duration-ms="465" started-at="2014-11-30T20:00:57Z" finished-at="2014-11-30T20:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveCorrectTitle -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-30T20:01:00Z" finished-at="2014-11-30T20:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveCorrectTitle status=SUCCESS method=WhenUserDisplayesFilterFeedPage.PageShouldHaveCorrectTitle()[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="PageShouldHaveDoneButton()[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="PageShouldHaveDoneButton" duration-ms="148" started-at="2014-11-30T20:01:00Z" finished-at="2014-11-30T20:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageShouldHaveDoneButton -->
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-30T20:01:02Z" finished-at="2014-11-30T20:01:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PageShouldHaveDoneButton status=SUCCESS method=WhenUserDisplayesFilterFeedPage.PageShouldHaveDoneButton()[pri:0, instance:Tests.WhenUserDisplayesFilterFeedPage@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+      </class> <!-- Tests.WhenUserDisplayesFilterFeedPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

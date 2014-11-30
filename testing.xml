@@ -7,7 +7,7 @@
       <class name="Tests.WhenLoginPanelIsDisplayed"/>
        <class name="Tests.WhenUserLoginToApplication"/>
        <class name="Tests.WhenUserDisplayedAddNewTextMessageView"/>
-        <class name="Tests.WhenUserAddNewMessageToAppliaction"/>
+        <class name="Tests.WhenUserDisplayesFilterFeedPage"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
