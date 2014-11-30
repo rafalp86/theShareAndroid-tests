@@ -24,7 +24,8 @@ public class WallPage extends UI{
 	}
 	public FilterPage  TapFilterFeed(){
 		  CloseGoogleService();
-		  Click(MainFilterFeedElement);
+		  WebElement FilterFeed= Finds(MainFilterFeedElement).get(0);
+		  FilterFeed.click();
 		  return new FilterPage();
 	}
 	public AddPostPage  TapShare(){
@@ -36,7 +37,8 @@ public class WallPage extends UI{
 	}
 	public YourProfilePage  TapYourProfile(){
 		  CloseGoogleService();
-		  WaitAndClick(MainProfileElement);
+		  WebElement YourProfile= Finds(MainProfileElement).get(2);
+		  YourProfile.click();
 		  return new YourProfilePage();
 	}
 	public NotificationsPage  TapNotifications(){
@@ -89,8 +91,9 @@ public class WallPage extends UI{
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
 	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
 	private By ShareButtont = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
-	private By MainProfileElement = GetBy.ResourceId("com.example.theshare:id/main_profile");
+	private By MainProfileElement = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
 	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
+	private By MainFilterFeedElement = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,;
 	
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
@@ -106,7 +109,7 @@ public class WallPage extends UI{
 	private By MessageRelateIconElement = GetBy.ResourceId("com.example.theshare:id/message_relate_icon");
 	private By MessageRelateTextElement = GetBy.ResourceId("com.example.theshare:id/message_relate_text");
 	private By MessageRespondElement = GetBy.ResourceId("com.example.theshare:id/message_respond");
-	private By MainFilterFeedElement = GetBy.ResourceId("com.example.theshare:id/main_filter_feed");
+
 	
 	
 }
