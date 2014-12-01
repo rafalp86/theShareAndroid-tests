@@ -12,6 +12,7 @@ public class Add extends UI  {
 	
 	public static WallPage MessageAndBackToWall(String messageText)
 	{
+		System.out.println("Add new mesage "+messageText);
 		return GoTo
 				.ComposeTextView()
 				.SetMessage(messageText)

@@ -59,6 +59,7 @@ public class WhenUserAddNewMessageToAppliaction extends ShareBase {
 	@AfterMethod
 	public void BackToWallPage()
 	{
+		System.out.println("AfterMethod");
 		if(!(new WallPage()).NotificationElementIsPresentWithoutGoogle()) Gestures.Back();
 	}
 	

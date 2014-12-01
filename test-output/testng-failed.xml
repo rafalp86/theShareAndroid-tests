@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserDisplayesFilterFeedPage">
+      <class name="Tests.WhenUserAddNewMessageToAppliaction">
         <methods>
           <include name="ScreenshotWhenFail"/>
-          <include name="CheckboxInFilterShouldBeLinked" invocation-numbers="1"/>
+          <include name="BackToWallPage"/>
+          <include name="MessageSchouldByPresentInWall"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.WhenUserDisplayesFilterFeedPage -->
+      </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

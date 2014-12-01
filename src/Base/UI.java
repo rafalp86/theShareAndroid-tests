@@ -153,6 +153,10 @@ public class UI extends ShareBase {
 			if(ClearContent.length<0)element.clear();
 			element.sendKeys(message);
 		}
+		public static void SetTextJS(String argumentValue,String text )
+		{
+			((JavascriptExecutor) driver).executeScript("$('[resource-id~=\""+argumentValue+"\"]').val('"+text+"')");
+		}
 	
 	 
 	 public enum Class

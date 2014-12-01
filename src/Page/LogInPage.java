@@ -100,6 +100,7 @@ public class LogInPage extends UI{
 	
 	// Elements
 	private By emailElemet= GetBy.ResourceId("com.example.theshare:id/login_email");
+	private String emialResorceId="com.example.theshare:id/login_email";
 	private By passwordElement= GetBy.ResourceId("com.example.theshare:id/login_password");
 	private By loginButton= GetBy.ResourceId("com.example.theshare:id/login_login");
 	private By facebookButton= GetBy.ResourceId("com.example.theshare:id/login_facebook");

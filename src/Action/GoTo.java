@@ -21,7 +21,7 @@ public class GoTo extends UI {
 	
 	public static WallPage WallView()
 	{
-		if((new WallPage()).NotificationElementIsPresentWithoutGoogle())
+		if((new WallPage()).NotificationElementIsPresent())
 			return new WallPage();
 		
 		return (new LogInPage())

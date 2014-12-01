@@ -85,7 +85,7 @@ public class WallPage extends UI{
 	public boolean MessageIsPresent(String MessageText)
 	{
 		CloseGoogleService();
-		return ElementExist(MessageBytext(MessageText));
+		return ElementExist(MessageBytext(MessageText),7);
 	}
 	//
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
