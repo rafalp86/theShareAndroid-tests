@@ -91,6 +91,7 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
     private   DesiredCapabilities Configuration(String testName)
       {		  
    	   DesiredCapabilities capabilities = new DesiredCapabilities();
+   	   
    	   if(appConfig.getBool("RunLocal"))
    	   {
 	   	   File appDir = new File("resources");

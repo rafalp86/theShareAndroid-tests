@@ -5,11 +5,9 @@
     <classes>
       <class name="Tests.WhenUserAddNewMessageToAppliaction">
         <methods>
-          <include name="ScreenshotWhenFail"/>
-          <include name="BackToWallPage"/>
+          <include name="MessageSchouldByPresentInProfileViewList"/>
           <include name="MessageSchouldByPresentInWall"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
     </classes>

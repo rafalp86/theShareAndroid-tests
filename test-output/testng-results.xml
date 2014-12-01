@@ -1,55 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="191460" started-at="2014-12-01T17:35:41Z" finished-at="2014-12-01T17:38:53Z">
+  <suite name="Default suite" duration-ms="134" started-at="2014-12-01T18:13:59Z" finished-at="2014-12-01T18:13:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="191460" started-at="2014-12-01T17:35:41Z" finished-at="2014-12-01T17:38:53Z">
+    <test name="Default test" duration-ms="134" started-at="2014-12-01T18:13:59Z" finished-at="2014-12-01T18:13:59Z">
       <class name="Tests.WhenUserAddNewMessageToAppliaction">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="setUp" is-config="true" duration-ms="10927" started-at="2014-12-01T18:35:41Z" finished-at="2014-12-01T18:35:52Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="setUp" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Problem with create Webdrive instantion: java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: java.lang.NullPointerException
+	at org.testng.Assert.fail(Assert.java:94)
+	at Base.ShareBase.ConnectionWithApplication(ShareBase.java:56)
+	at Tests.WhenUserAddNewMessageToAppliaction.setUp(WhenUserAddNewMessageToAppliaction.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="MessageSchouldByPresentInProfileViewList" duration-ms="121482" started-at="2014-12-01T18:35:52Z" finished-at="2014-12-01T18:37:54Z">
+        <test-method status="FAIL" signature="MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="MessageSchouldByPresentInProfileViewList" duration-ms="1" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at Base.ShareBase.getSessionId(ShareBase.java:138)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageSchouldByPresentInProfileViewList -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="BackToWallPage" is-config="true" duration-ms="7699" started-at="2014-12-01T18:37:56Z" finished-at="2014-12-01T18:38:03Z">
+        <test-method status="SKIP" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-12-01T18:38:03Z" finished-at="2014-12-01T18:38:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MessageSchouldByPresentInProfileViewList status=SUCCESS method=WhenUserAddNewMessageToAppliaction.MessageSchouldByPresentInProfileViewList()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="MessageSchouldByPresentInWall()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="MessageSchouldByPresentInWall" duration-ms="47106" started-at="2014-12-01T18:38:03Z" finished-at="2014-12-01T18:38:50Z">
+        <test-method status="FAIL" signature="MessageSchouldByPresentInWall()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="MessageSchouldByPresentInWall" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at Base.ShareBase.getSessionId(ShareBase.java:138)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageSchouldByPresentInWall -->
-        <test-method status="PASS" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="BackToWallPage" is-config="true" duration-ms="252" started-at="2014-12-01T18:38:51Z" finished-at="2014-12-01T18:38:52Z">
+        <test-method status="SKIP" signature="BackToWallPage()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="BackToWallPage" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToWallPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-12-01T18:38:52Z" finished-at="2014-12-01T18:38:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MessageSchouldByPresentInWall status=SUCCESS method=WhenUserAddNewMessageToAppliaction.MessageSchouldByPresentInWall()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@6f3ee250]" name="tearDown" is-config="true" duration-ms="1002" started-at="2014-12-01T18:38:52Z" finished-at="2014-12-01T18:38:53Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Tests.WhenUserAddNewMessageToAppliaction@41a61e5e]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-12-01T19:13:59Z" finished-at="2014-12-01T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
