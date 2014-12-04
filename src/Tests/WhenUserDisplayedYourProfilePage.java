@@ -11,6 +11,7 @@ import Page.YourProfilePage;
 
 public class WhenUserDisplayedYourProfilePage extends ShareBase {
 	private YourProfilePage ProfileView;
+	
 	@BeforeClass
     public void setUp()
 	 {

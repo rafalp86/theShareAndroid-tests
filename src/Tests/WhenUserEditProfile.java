@@ -12,7 +12,7 @@ public class WhenUserEditProfile extends ShareBase {
 	@BeforeClass
     public void setUp()
 	 {
-		ConnectionWithApplication("WhenUserDisplayedYourProfilePage");
+		ConnectionWithApplication("WhenUserEditProfile");
 		
 	 }
 	
