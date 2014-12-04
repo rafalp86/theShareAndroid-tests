@@ -10,7 +10,6 @@
       <class name="Tests.WhenUserAddNewMessageToAppliaction"/>
       <class name="Tests.WhenUserDisplayesFilterFeedPage"/>
       <class name="Tests.WhenUserDisplayedYourProfilePage"/>
-      
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
