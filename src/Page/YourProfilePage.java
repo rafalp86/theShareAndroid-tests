@@ -14,9 +14,9 @@ public class YourProfilePage extends UI {
 	  Click(ProfileVideosElement);
 	  return this;
 	}
-	public YourProfilePage  TapProfileFollowing(){
+	public FollowingFollowersPage  TapProfileFollowing(){
 	  Click(ProfileFollowingElement);
-	  return this;
+	  return  new FollowingFollowersPage();
 	}
 	public YourProfilePage  TapProfileFollowers(){
 	  Click(ProfileFollowersElement);
@@ -27,12 +27,17 @@ public class YourProfilePage extends UI {
 	  return this;
 	}
 	public YourProfilePage  TapMessageDelete(){
-	  Click(MessageDeleteElement);
+	  Click(MessageDeleteButon);
 	  return this;
 	}
 	public ProfileSetingsPage  TapSettings(){
 		  Click(ActionSettingsElement);
 		  return new ProfileSetingsPage();
+	}
+	//Get
+	public int  GetFollowingCounter(){
+		Sleep(1000); // Bez Wait bo trzeba by³oby znac stan licznika
+		return  Integer.parseInt(GetText(ProfileFollowingElement).split(" ")[0]);
 	}
 	
 	// IS PRESENT
@@ -44,18 +49,37 @@ public class YourProfilePage extends UI {
 	{
 		return ElementExist(MessageBytext(MessageText));
 	}
+	public boolean AnyMessageIsPresent() {
+		return ElementExist(MessageDeleteButon);
+	}
+	public boolean PageTitleIsPresent() {
+		return ElementExist(PageTitleLeabel);
+	}
+	public boolean FollowersIsPresent() {
+		return ElementExist(ProfileFollowersElement);
+	}
+	public boolean VideosIsPresent() {
+		return ElementExist(ProfileVideosElement);
+	}
+	public boolean FollowingIsPresent() {
+		return ElementExist(ProfileFollowingElement);
+	}
 	
 	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
-	
+	private By MessageDeleteButon = GetBy.ResourceId("com.example.theshare:id/message_delete");
 	private By ActionSettingsElement = GetBy.ResourceId("com.example.theshare:id/action_settings");
+	private By PageTitleLeabel = GetBy.ResourceId("android:id/action_bar_title");
+	private By ProfileVideosElement = GetBy.ResourceId("com.example.theshare:id/profile_videos");
+	private By ProfileFollowingElement = GetBy.ResourceId("com.example.theshare:id/profile_following");
+	private By ProfileFollowersElement = GetBy.ResourceId("com.example.theshare:id/profile_followers");
+
+	
 	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
 	private By ProfileUserDataElement = GetBy.ResourceId("com.example.theshare:id/profile_user_data");
 	private By ProfileAvatarElement = GetBy.ResourceId("com.example.theshare:id/profile_avatar");
 	private By ProfileBtnsElement = GetBy.ResourceId("com.example.theshare:id/profile_btns");
-	private By ProfileVideosElement = GetBy.ResourceId("com.example.theshare:id/profile_videos");
-	private By ProfileFollowingElement = GetBy.ResourceId("com.example.theshare:id/profile_following");
-	private By ProfileFollowersElement = GetBy.ResourceId("com.example.theshare:id/profile_followers");
+
 	private By ProfileActionsFrameElement = GetBy.ResourceId("com.example.theshare:id/profile_actions_frame");
 	private By ProfileEditElement = GetBy.ResourceId("com.example.theshare:id/profile_edit");
 	private By ProfileUsernameElement = GetBy.ResourceId("com.example.theshare:id/profile_username");
@@ -68,8 +92,9 @@ public class YourProfilePage extends UI {
 	private By MessageResponseElement = GetBy.ResourceId("com.example.theshare:id/message_response");
 	private By MessageRelateIconElement = GetBy.ResourceId("com.example.theshare:id/message_relate_icon");
 	private By MessageRelateTextElement = GetBy.ResourceId("com.example.theshare:id/message_relate_text");
-	private By MessageDeleteElement = GetBy.ResourceId("com.example.theshare:id/message_delete");
+	
 	private By MessageAvatarElement = GetBy.ResourceId("com.example.theshare:id/message_avatar");
 	private By MessageNameElement = GetBy.ResourceId("com.example.theshare:id/message_name");
 	private By MessageWhenElement = GetBy.ResourceId("com.example.theshare:id/message_when");
+		
 }

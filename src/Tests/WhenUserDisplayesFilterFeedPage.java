@@ -26,12 +26,12 @@ public class WhenUserDisplayesFilterFeedPage extends ShareBase {
 	
 	@Test
 	public void PageShouldHaveCorrectTitle()
-	{ //1.	Sprawdziæ czy ekran ma tytul „Compose text message..”
+	{ //1.	1	Sprawdziæ wyœwietlanie tytu³u
 		Assert.assertTrue(FilterView.PageTitleIsPresent(), "Can't see see [Compose text message] ");
 	}
 	@Test
 	public void PageShouldHaveDoneButton()
-	{ //2.	Sprawdzic czy Elemety Done, pole tekstowe sa dostepne 
+	{ //2.	Sprawdzic czy Elemety Done jest dostpeny
 		
 		Assert.assertTrue(FilterView.DoneButtonPresent(), "Can't see see [Done button] ");		
 	}

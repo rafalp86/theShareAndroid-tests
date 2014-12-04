@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserAddNewMessageToAppliaction">
+      <class name="Tests.WhenUserDisplayedYourProfilePage">
         <methods>
-          <include name="MessageSchouldByPresentInProfileViewList"/>
-          <include name="MessageSchouldByPresentInWall"/>
+          <include name="PageShouldHaveCorrectTitle"/>
+          <include name="PageShouldHaveEnebledFollowingFollowersVideosButton"/>
+          <include name="AddFollowingShouldIncreaseCounter"/>
+          <include name="SubtractFollowingShouldReduceCounter"/>
+          <include name="ShouldSeeAddedPost"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.WhenUserAddNewMessageToAppliaction -->
+      </class> <!-- Tests.WhenUserDisplayedYourProfilePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

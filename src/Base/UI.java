@@ -36,6 +36,14 @@ public class UI extends ShareBase {
 	 System.out.println("press :Back");
 	}
 	
+	protected static void Sleep(int milliseconds)
+	{
+		try {
+		    Thread.sleep(milliseconds);                 //1000 milliseconds is one second.
+		} catch(InterruptedException ex) {
+		    Thread.currentThread().interrupt();
+		}   
+	}
 	protected static String  ExeciutJS(String arg0,Object arg1) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		return (String) js.executeScript(arg0, arg1);

@@ -5,6 +5,7 @@ import Page.AddPostPage;
 import Page.FilterPage;
 import Page.LogInPage;
 import Page.WallPage;
+import Page.YourProfilePage;
 
 public class GoTo extends UI {
 	
@@ -30,6 +31,11 @@ public class GoTo extends UI {
 				.SetPassword(appConfig.get("Password"))
 				.TapLogin();
 	}
+	public static YourProfilePage YourProfile()
+	{
+		return WallView().TapYourProfile();
+	}
+	
 	public static AddPostPage ComposeTextView()
 	{
 		return WallView().TapShare().TapTextMessage();
