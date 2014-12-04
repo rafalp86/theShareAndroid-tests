@@ -2,6 +2,7 @@ package Action;
 
 import Base.UI;
 import Page.AddPostPage;
+import Page.EditProfilePage;
 import Page.FilterPage;
 import Page.LogInPage;
 import Page.WallPage;
@@ -44,6 +45,10 @@ public class GoTo extends UI {
 	public static FilterPage FilterView()
 	{
 		return WallView().TapFilterFeed();
+	}
+
+	public static EditProfilePage EditProfile() {
+		return YourProfile().TapProfileEdit();
 	}
 
 	

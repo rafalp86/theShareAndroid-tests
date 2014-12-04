@@ -22,9 +22,9 @@ public class YourProfilePage extends UI {
 	  Click(ProfileFollowersElement);
 	  return this;
 	}
-	public YourProfilePage  TapProfileEdit(){
+	public EditProfilePage  TapProfileEdit(){
 	  Click(ProfileEditElement);
-	  return this;
+	  return new EditProfilePage();
 	}
 	public YourProfilePage  TapMessageDelete(){
 	  Click(MessageDeleteButon);

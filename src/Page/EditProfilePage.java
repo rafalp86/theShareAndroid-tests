@@ -8,10 +8,15 @@ import Base.UI;
 
 public class EditProfilePage extends UI{
 	//TAP
-	public YourProfilePage TabSave()
+	public YourProfilePage TapSave()
 	{
 		Gestures.ScollTo(SaveElement);
 		Click(SaveElement);
+		return new YourProfilePage();
+	}
+	public YourProfilePage TapBack()
+	{
+		UI.Back();
 		return new YourProfilePage();
 	}
 	// SET TEXT
