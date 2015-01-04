@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <!-- App Data -->
-<entry key="RunLocal">False</entry>
+<entry key="RunLocal">True</entry>
 <entry key="RunSelendroid">False</entry>
 <entry key="SlideCount">5</entry>
  <!-- Test Data -->
