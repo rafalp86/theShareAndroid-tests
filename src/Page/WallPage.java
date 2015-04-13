@@ -14,7 +14,7 @@ public class WallPage extends UI{
 	// do usuniêcia po fixie
 	private void CloseGoogleService()
 	{
-		if (ElementExist(GetBy.Text("Get Google Play services"), 1)) Back();
+		//if (ElementExist(GetBy.Text("Get Google Play services"), 1)) Back();
 	}
 	
 	public WallPage  TapMessageRespond(){

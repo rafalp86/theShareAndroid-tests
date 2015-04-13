@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserDisplayedYourProfilePage">
+      <class name="Tests.WhenUserRunApp">
         <methods>
-          <include name="PageShouldHaveCorrectTitle"/>
-          <include name="PageShouldHaveEnebledFollowingFollowersVideosButton"/>
-          <include name="AddFollowingShouldIncreaseCounter"/>
-          <include name="SubtractFollowingShouldReduceCounter"/>
-          <include name="ShouldSeeAddedPost"/>
           <include name="setUp"/>
+          <include name="ShouldSwipAllSlideAndDisplaySharingButton"/>
+          <include name="ScreenshotWhenFail"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.WhenUserDisplayedYourProfilePage -->
+      </class> <!-- Tests.WhenUserRunApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

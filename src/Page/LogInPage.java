@@ -21,7 +21,7 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
-		Gestures.ScrollToTop(Class.Button);
+		//Gestures.ScrollToTop(Class.Button);
 		WaitForElement(emailElemet, 5);
 		SetText(emailElemet, email_acount);
 		return this;

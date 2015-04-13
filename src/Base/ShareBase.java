@@ -1,39 +1,30 @@
 package Base;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
-
-import sun.rmi.log.LogInputStream;
 
 import Page.LogInPage;
 
-import com.saucelabs.common.SauceOnDemandAuthentication;
-import com.saucelabs.common.SauceOnDemandSessionIdProvider;
-import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
-import com.saucelabs.testng.SauceOnDemandTestListener;
 
-@Listeners({SauceOnDemandTestListener.class})
-public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
+
+public class ShareBase   {
 
 	public static Config appConfig = new Config();
 	
-	protected  SauceOnDemandAuthentication authentication;
-	protected static WebDriver driver;
+	protected static AppiumDriver driver;
 	//@BeforeSuite 
 	protected  WebDriver ConnectionWithApplication() 
 	{ return ConnectionWithApplication("Test");}
@@ -42,12 +33,24 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	protected  WebDriver ConnectionWithApplication(String TestName) 
 	{   
 		
-		authentication = new SauceOnDemandAuthentication(appConfig.get("Username"),appConfig.get("AccessKey"));
+
 		driver= null;
 		try
 		{
-			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test2")):
-				new RemoteWebDriver(new URL("http://"+appConfig.get("Username")+":"+appConfig.get("AccessKey")+"@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
+			driver= new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration(TestName)) {
+				
+				@Override
+				public MobileElement scrollToExact(String arg0) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public MobileElement scrollTo(String arg0) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+			};
 			
 		}
 		catch (Exception ex)
@@ -59,6 +62,8 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 		 (new LogInPage()).SkippButtonIsPresent(60);
 		System.out.println("Connect  with application");
 		System.out.println("Test :"+TestName);
+		driver.resetApp();
+		WaitForApplication();
 		return driver;
 	}
 	
@@ -81,12 +86,15 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
           
         }
 	 }
+	
 	@AfterMethod
 	protected  void ScreenshotWhenFail(ITestResult result) {
 		  if (result.getStatus() == ITestResult.FAILURE) {
 		    	Screenshot("FAIL"+result.getName());
 		    }   
 	}
+	
+	
 //This configuration should by taken from configuration file 
     private   DesiredCapabilities Configuration(String testName)
       {		  
@@ -99,24 +107,18 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
 	   	   capabilities.setCapability("app",app);
    	   }else
    	   {
-   		   capabilities.setCapability("app","sauce-storage:"+appConfig.get("StorageApk"));
-   		   capabilities.setCapability("appium-version", "1.2");
+
    		   
    	   }
    	   
    	   if (appConfig.getBool("RunSelendroid"))
 	   {
-		capabilities.setCapability("deviceName","LGOTMS1ab80a"); 
-		capabilities.setCapability("automationName", "selendroid");
-		capabilities.setCapability("platformVersion", "2.2");
-		capabilities.setCapability("app-package", "com.example.theshare"); 
-	    capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
-	    capabilities.setCapability("app-wait-activity",".activities.WelcomeFragmentActivity");
+
 	   }
    	   else
    	   {
        capabilities.setCapability("deviceName","Android Emulator");
-       capabilities.setCapability("platformVersion", "4.4");
+       capabilities.setCapability("platformVersion", "4.2");
    	   }
        
    	   capabilities.setCapability("name",testName);
@@ -126,18 +128,21 @@ public class ShareBase  implements SauceOnDemandSessionIdProvider, SauceOnDemand
        return capabilities;
       }
 
-
-    @Override
-    public SauceOnDemandAuthentication getAuthentication() {
-        return authentication;
+    private void WaitForApplication()
+    {
+    	int timeout=0;
+    	do
+    	{
+	    	try
+	    	{
+	    		Thread.sleep(5000);    
+	    		if (!UI.Finds(By.xpath("//*")).isEmpty())
+	    			return ;    		
+	    	}
+	    	catch (Exception ex){}
+	    	timeout++;	    	
+    	} while (timeout <10);
     }
-
-    @Override
-    public String getSessionId() {
-        SessionId sessionId = ((RemoteWebDriver)driver).getSessionId();
-        return (sessionId == null) ? null : sessionId.toString();
-    }
-    
 
 }
 
