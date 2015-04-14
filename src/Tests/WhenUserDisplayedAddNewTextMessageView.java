@@ -26,8 +26,8 @@ public class WhenUserDisplayedAddNewTextMessageView extends ShareBase{
 	 }
 	@Test
 	public void PageShouldHaveCorrectTitle()
-	{ //1.	Sprawdziæ czy ekran ma tytul „Compose text message..”
-		Assert.assertTrue(AddMesageView.PageTitleIsPresent(), "Can't see see [Compose text message] ");
+	{ //1.	Sprawdziæ czy ekran ma tytul „TheSHARE..”
+		Assert.assertEquals(AddMesageView.PageTitle(), "theSHARE","Can't see see title [theSHARE] ");
 	}
 	@Test
 	public void PageShouldHaveTextControlAndDoneButton()

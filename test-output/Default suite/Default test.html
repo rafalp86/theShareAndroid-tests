@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 13 19:40:23 CEST 2015</td>
+<td>Started on:</td><td>Tue Apr 14 20:52:53 CEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34132 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85576 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.WhenUserRunApp.ShouldSwipAllSlideAndDisplaySharingButton()'><b>ShouldSwipAllSlideAndDisplaySharingButton</b><br>Test class: Tests.WhenUserRunApp</td>
-<td><div><pre>java.lang.AssertionError: Can&apos;t see [Start sharing now] expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Tests.WhenUserRunApp.ShouldSwipAllSlideAndDisplaySharingButton(WhenUserRunApp.java:33)
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.ShouldDisplayedWallWhenUserSelectDone()'><b>ShouldDisplayedWallWhenUserSelectDone</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at Base.UI.Click(UI.java:69)
+	at Page.AddPostPage.TapDone(AddPostPage.java:18)
+	at Tests.WhenUserDisplayedAddNewTextMessageView.ShouldDisplayedWallWhenUserSelectDone(WhenUserDisplayedAddNewTextMessageView.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,12 +106,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1179451924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1179451924'><pre>java.lang.AssertionError: Can&apos;t see [Start sharing now] expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Tests.WhenUserRunApp.ShouldSwipAllSlideAndDisplaySharingButton(WhenUserRunApp.java:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1472301930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472301930'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at Base.UI.Click(UI.java:69)
+	at Page.AddPostPage.TapDone(AddPostPage.java:18)
+	at Tests.WhenUserDisplayedAddNewTextMessageView.ShouldDisplayedWallWhenUserSelectDone(WhenUserDisplayedAddNewTextMessageView.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -136,8 +138,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>7</td>
-<td>Tests.WhenUserRunApp@5ef4f91d</td></tr>
+<td>15</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -147,10 +149,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.WhenUserRunApp.ShouldDisplayCloseButtonInSlide()'><b>ShouldDisplayCloseButtonInSlide</b><br>Test class: Tests.WhenUserRunApp</td>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Entire Alumni Program, 1</td>
+<td></td>
+<td>1</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Entire Family Program, 2</td>
+<td></td>
+<td>1</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: People you are following, 1</td>
 <td></td>
 <td>0</td>
-<td>Tests.WhenUserRunApp@5ef4f91d</td></tr>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: People following you, 2</td>
+<td></td>
+<td>1</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Only with men, 3</td>
+<td></td>
+<td>1</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.CheckboxInFilterShouldBeLinked()'><b>CheckboxInFilterShouldBeLinked</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Select specific followers, 2</td>
+<td></td>
+<td>1</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveCorrectTitle()'><b>PageShouldHaveCorrectTitle</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveExtaraButtonWnehUserCheckSpecificFollowers()'><b>PageShouldHaveExtaraButtonWnehUserCheckSpecificFollowers</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView</td>
+<td></td>
+<td>4</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Entire Alumni Program, 1</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Entire Family Program, 2</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: People you are following, 1</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: People following you, 2</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Only with men, 3</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveFewParameters()'><b>PageShouldHaveFewParameters</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView<br>Parameters: Select specific followers, 2</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
+<tr>
+<td title='Tests.WhenUserDisplayedAddNewTextMessageView.PageShouldHaveTextControlAndDoneButton()'><b>PageShouldHaveTextControlAndDoneButton</b><br>Test class: Tests.WhenUserDisplayedAddNewTextMessageView</td>
+<td></td>
+<td>0</td>
+<td>Tests.WhenUserDisplayedAddNewTextMessageView@4101baf8</td></tr>
 </table><p>
 </body>
 </html>

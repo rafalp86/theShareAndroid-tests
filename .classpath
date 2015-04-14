@@ -10,6 +10,6 @@
 	<classpathentry kind="lib" path="DLib/testng-6.8.8.jar"/>
 	<classpathentry kind="lib" path="Lib"/>
 	<classpathentry kind="lib" path="Lib/selenium-server-standalone-2.45.0.jar"/>
-	<classpathentry kind="lib" path="DLib/java-client-2.2.0.jar"/>
+	<classpathentry kind="lib" path="Lib/java-client-2.2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

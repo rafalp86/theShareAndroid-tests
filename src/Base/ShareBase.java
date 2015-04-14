@@ -32,9 +32,6 @@ public class ShareBase   {
 	
 	protected  WebDriver ConnectionWithApplication(String TestName) 
 	{   
-		
-
-		driver= null;
 		try
 		{
 			driver= new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration(TestName)) {
@@ -124,6 +121,9 @@ public class ShareBase   {
    	   capabilities.setCapability("name",testName);
    	   capabilities.setCapability("platformName","Android");
    	   capabilities.setCapability("deviceType", "phone");
+   	   capabilities.setCapability("app-package", "com.example.theshare"); 
+       capabilities.setCapability("app-activity", ".Activities.MainActivity"); 
+       
               
        return capabilities;
       }

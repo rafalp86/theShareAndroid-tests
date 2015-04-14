@@ -1,6 +1,6 @@
 
 #przekazaæ jako parametry
-$apkFile='D:\Project\GIT\crm_appium\resources\mobile.apk'
+$apkFile='D:\Project\GIT\theShareAndroid-tests\resources\theShare.apk'
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
 $runInDevice=$True

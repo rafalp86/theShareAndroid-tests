@@ -1,5 +1,8 @@
 package Action;
 
+import io.appium.java_client.MobileDriver;
+import io.appium.java_client.TouchAction;
+
 import java.util.HashMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -15,13 +18,16 @@ public class Gestures extends UI {
 	 {
 		 try
 		 {
-		 HashMap<String, Double> swipeObject = new HashMap<String, Double>();
+		/* HashMap<String, Double> swipeObject = new HashMap<String, Double>();
 		 swipeObject.put("startX", startX);
 		 swipeObject.put("startY",startY);
 		 swipeObject.put("endX", endX);
 		 swipeObject.put("endY", endY);
 		 swipeObject.put("duration", 3.0);
 		 UI.ExeciutJS("mobile: swipe", swipeObject);
+		 */
+			 TouchAction action = new TouchAction((MobileDriver) driver);
+			 action.press((int)startX, (int)startY).waitAction(500).moveTo((int)endX, (int)endY).release().perform();
 		 }
 		 catch (Exception ex )
 		 {
@@ -78,5 +84,13 @@ public class Gestures extends UI {
 	public static void Back()
 	{
 		UI.Back();
+	}
+	public static void HideKeyboard()
+	{
+		try
+		{
+		driver.hideKeyboard();
+		}
+		catch(Exception ex){}
 	}
 }

@@ -5,6 +5,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import Action.Gestures;
 import Action.GoTo;
 import Base.ShareBase;
 import Page.LogInPage;
@@ -34,7 +35,6 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can't see [FacebookButton]");
 		Assert.assertTrue(loginView.CreateAccountButtonIsPresent(),"Can't see [CreateAccountButton]");
 		Assert.assertTrue(loginView.LoginResetButtonIsPresent(),"Can't see [LoginReset]");
-		Assert.assertTrue(loginView.FacebookButtonIsPresent(),"Can't see [FacebookButton]");
 	}
 	
 	@Test

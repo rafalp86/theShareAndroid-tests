@@ -19,10 +19,12 @@ public class AddPostPage extends UI {
 		  return new WallPage();
 	}
 	public AddPostPage  TapFilter(String FilterText){
+		  
 		  WaitAndClick(FilterByText(FilterText));
 		  return this;
 	}
 	public AddPostPage  TapSpecificFollowersFilter(){
+		Gestures.HideKeyboard();
 		String filterText="Select specific followers";
 		 List<WebElement> selectFiltes= Finds(AllCheckedFillter);
 		 for(int i=0; i<selectFiltes.size();i++)
@@ -46,9 +48,9 @@ public class AddPostPage extends UI {
 	{
 		return ElementExist(DoneButton);
 	}
-	public boolean PageTitleIsPresent()
+	public String PageTitle()
 	{
-		return ElementExist(TitleElemet);
+		return GetText(TitleElemet);
 	}
 	public boolean MessageIsPresent()
 	{
@@ -60,13 +62,14 @@ public class AddPostPage extends UI {
 	}
 	public boolean SelectFollowerIsPresent()
 	{
+		Gestures.HideKeyboard();
 		Gestures.ScrollToEnd();
 		return ElementExist(SelectFollower);
 	}
 	//ELEMENTS
 	private By DoneButton= GetBy.ResourceId("com.example.theshare:id/button_done");	
 	private By ComposeTextArea= GetBy.ResourceId("com.example.theshare:id/compose_text");	
-	private By TitleElemet= GetBy.ClassAndText(Class.TextView, "Compose text message");
+	private By TitleElemet= GetBy.ResourceId("android:id/action_bar_title");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
 	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");
 	private By SelectFollower= GetBy.ResourceId("com.example.theshare:id/select_followers");	 
@@ -80,6 +83,7 @@ public class AddPostPage extends UI {
 	}
 	public AddPostPage  TapTextMessage(){
 		  WaitAndClick(TextMessageElemet);
+		  Gestures.HideKeyboard();
 		  return this;
 	}
 	public AddPostPage  TapCancel(){

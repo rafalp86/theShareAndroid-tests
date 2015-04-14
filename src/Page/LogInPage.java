@@ -81,6 +81,7 @@ public class LogInPage extends UI{
 	}
 	public boolean FacebookButtonIsPresent()
 	{
+		Gestures.HideKeyboard();
 		return ElementExist(facebookButton);
 	}
 	public boolean CreateAccountButtonIsPresent()

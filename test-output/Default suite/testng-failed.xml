@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserRunApp">
+      <class name="Tests.WhenUserDisplayedAddNewTextMessageView">
         <methods>
-          <include name="setUp"/>
-          <include name="ShouldSwipAllSlideAndDisplaySharingButton"/>
-          <include name="ScreenshotWhenFail"/>
+          <include name="ShouldDisplayedWallWhenUserSelectDone"/>
           <include name="tearDown"/>
+          <include name="ScreenshotWhenFail"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.WhenUserRunApp -->
+      </class> <!-- Tests.WhenUserDisplayedAddNewTextMessageView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
