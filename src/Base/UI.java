@@ -151,14 +151,16 @@ public class UI extends ShareBase {
 	 public static void SetText(By element, String message,Boolean ... ClearContent) {
 		    System.out.println("Set tekst in "+ element+" ="+message);
 			WebElement textBox= Find(element);
-			if(ClearContent.length<0)  textBox.clear();
+			//if(ClearContent.length<0) 
+			textBox.clear();
 			textBox.sendKeys(message);
 			Gestures.HideKeyboard();
 		}
 	 
 		public static void SetText(WebElement element, String message,Boolean ... ClearContent) {
 		    System.out.println("Set tekst in "+ element+" ="+message);
-			if(ClearContent.length<0)element.clear();
+			//if(ClearContent.length<0)
+				element.clear();
 			element.sendKeys(message);
 			Gestures.HideKeyboard();
 		}
