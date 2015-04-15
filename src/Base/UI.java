@@ -153,14 +153,14 @@ public class UI extends ShareBase {
 			WebElement textBox= Find(element);
 			if(ClearContent.length<0)  textBox.clear();
 			textBox.sendKeys(message);
-			Gestures.Back();
+			Gestures.HideKeyboard();
 		}
 	 
 		public static void SetText(WebElement element, String message,Boolean ... ClearContent) {
 		    System.out.println("Set tekst in "+ element+" ="+message);
 			if(ClearContent.length<0)element.clear();
 			element.sendKeys(message);
-			Gestures.Back();
+			Gestures.HideKeyboard();
 		}
 		public static void SetTextJS(String argumentValue,String text )
 		{

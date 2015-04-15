@@ -3,10 +3,14 @@
 <suite name="Default suite">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="Tests.WhenLoginPanelIsDisplayed"/>
-	<class name="Tests.WhenUserAddNewMessageToAppliaction"/>
-      
-         
+		<class name="Tests.WhenLoginPanelIsDisplayed"/>
+		<class name="Tests.WhenUserAddNewMessageToAppliaction"/>
+		<class name="Tests.WhenUserDisplayedAddNewTextMessageView"/>
+		<class name="Tests.WhenUserDisplayedYourProfilePage"/>
+		<class name="Tests.WhenUserDisplayesFilterFeedPage"/>
+		<class name="Tests.WhenUserEditProfile"/>
+		<class name="Tests.WhenUserLoginToApplication"/>
+		<class name="Tests.WhenUserRunApp"/>      
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
