@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default suite">
-  <test verbose="2" name="Default test">
+  <test verbose="2" name="WhenLoginPanelIsDisplayed">
     <classes>
-		<class name="Tests.WhenLoginPanelIsDisplayed"/>
-		<class name="Tests.WhenUserAddNewMessageToAppliaction"/>
-		<class name="Tests.WhenUserDisplayedAddNewTextMessageView"/>
-		<class name="Tests.WhenUserDisplayedYourProfilePage"/>
-		<class name="Tests.WhenUserDisplayesFilterFeedPage"/>
-		<class name="Tests.WhenUserEditProfile"/>
-		<class name="Tests.WhenUserLoginToApplication"/>
+		<class name="Tests.WhenLoginPanelIsDisplayed"/>    
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserAddNewMessageToAppliaction">
+    <classes>
+		<class name="Tests.WhenUserAddNewMessageToAppliaction"/>    
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserDisplayedAddNewTextMessageView">
+    <classes>
+		<class name="Tests.WhenUserDisplayedAddNewTextMessageView"/>     
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserDisplayedYourProfilePage">
+    <classes>
+		<class name="Tests.WhenUserDisplayedYourProfilePage"/>   
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserDisplayesFilterFeedPage">
+    <classes>
+		<class name="Tests.WhenUserDisplayesFilterFeedPage"/>     
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserEditProfile">
+    <classes>
+		<class name="Tests.WhenUserEditProfile"/>      
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserLoginToApplication">
+    <classes>
+		<class name="Tests.WhenUserLoginToApplication"/>    
+    </classes>
+  </test> 
+<test verbose="2" name="WhenUserRunApp">
+    <classes>
 		<class name="Tests.WhenUserRunApp"/>      
     </classes>
-  </test> <!-- Default test -->
+  </test> 
 </suite> <!-- Default suite -->

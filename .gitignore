@@ -1,2 +1,5 @@
-/test-output
-/Screenshot
+test-output/
+Screenshot/
+test-output/Default suite/
+test-output/junitreports/
+test-output/old/
