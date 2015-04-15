@@ -59,7 +59,7 @@ public class ShareBase   {
 		 (new LogInPage()).SkippButtonIsPresent(60);
 		System.out.println("Connect  with application");
 		System.out.println("Test :"+TestName);
-		driver.resetApp();
+		//driver.resetApp();
 		WaitForApplication();
 		return driver;
 	}
