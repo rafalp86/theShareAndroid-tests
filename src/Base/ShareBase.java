@@ -126,7 +126,7 @@ public class ShareBase   {
    	capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
    	capabilities.setCapability("app-wait-package", ".activities.WelcomeFragmentActivity"); 
    	
-      // capabilities.setCapability("app-wait-activity", ".activities.WelcomeFragmentActivity");      
+      capabilities.setCapability("appWaitActivity", ".activities.WelcomeFragmentActivity");      
               
        return capabilities;
       }
