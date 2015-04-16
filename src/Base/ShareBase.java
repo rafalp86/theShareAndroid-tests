@@ -115,7 +115,7 @@ public class ShareBase   {
    	   else
    	   {
        capabilities.setCapability("deviceName","Android Emulator");
-       capabilities.setCapability("platformVersion", "4.2");
+       capabilities.setCapability("platformVersion", "4.4");
    	   }
        
    	   capabilities.setCapability("name",testName);
@@ -123,7 +123,7 @@ public class ShareBase   {
    	   capabilities.setCapability("deviceType", "phone");
    	   capabilities.setCapability("app-package", "com.example.theshare"); 
        capabilities.setCapability("app-activity", ".Activities.MainActivity"); 
-       
+       capabilities.setCapability("app-wait-activity", ".activities.WelcomeFragmentActivity");      
               
        return capabilities;
       }
