@@ -122,8 +122,11 @@ public class ShareBase   {
    	   capabilities.setCapability("platformName","Android");
    	   capabilities.setCapability("deviceType", "phone");
    	   capabilities.setCapability("app-package", "com.example.theshare"); 
-       capabilities.setCapability("app-activity", ".Activities.MainActivity"); 
-       capabilities.setCapability("app-wait-activity", ".activities.WelcomeFragmentActivity");      
+      // capabilities.setCapability("app-activity", ".Activities.MainActivity"); 
+   	capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
+   	capabilities.setCapability("app-wait-package", ".activities.WelcomeFragmentActivity"); 
+   	
+      // capabilities.setCapability("app-wait-activity", ".activities.WelcomeFragmentActivity");      
               
        return capabilities;
       }
