@@ -3,7 +3,7 @@
 $apkFile='D:\Project\GIT\theShareAndroid-tests\resources\theShare.apk'
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
-$runInDevice=$True
+$runInDevice=$False
 
 $resetEmulator=$false
 
@@ -33,7 +33,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
     Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log c:\AppiumForm.txt --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
     
 
-   sleep(8)
+    if($runInDevice) { sleep(5)} else {sleep(15)}
   "Appium proces started: "+ (Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
 
 if($resetEmulator)
