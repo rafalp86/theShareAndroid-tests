@@ -96,35 +96,16 @@ public class ShareBase   {
     private   DesiredCapabilities Configuration(String testName)
       {		  
    	   DesiredCapabilities capabilities = new DesiredCapabilities();
-   	   
-   	   if(appConfig.getBool("RunLocal"))
-   	   {
-	   	   File appDir = new File("resources");
-	       File app = new File(appDir, "theShare.apk");  
-	   	   capabilities.setCapability("app",app);
-   	   }else
-   	   {
-
-   		   
-   	   }
-   	   
-   	   if (appConfig.getBool("RunSelendroid"))
-	   {
-
-	   }
-   	   else
-   	   {
-       capabilities.setCapability("deviceName","Android Emulator");
+   	
+   	   capabilities.setCapability("deviceName","Android Emulator");
        capabilities.setCapability("platformVersion", "4.4");
-   	   }
-       
    	   capabilities.setCapability("name",testName);
    	   capabilities.setCapability("platformName","Android");
-   	   capabilities.setCapability("deviceType", "phone");
+   	   capabilities.setCapability("deviceName","Android Emulator");
    	   capabilities.setCapability("app-package", "com.example.theshare"); 
       // capabilities.setCapability("app-activity", ".Activities.MainActivity"); 
-   	capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
-   	capabilities.setCapability("app-wait-package", ".activities.WelcomeFragmentActivity"); 
+   	  capabilities.setCapability("app-activity", ".activities.WelcomeFragmentActivity"); 
+     capabilities.setCapability("app-wait-package", ".activities.WelcomeFragmentActivity"); 
    	
       capabilities.setCapability("appWaitActivity", ".activities.WelcomeFragmentActivity");      
               

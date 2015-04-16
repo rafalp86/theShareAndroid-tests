@@ -153,6 +153,7 @@ public class UI extends ShareBase {
 			WebElement textBox= Find(element);
 			//if(ClearContent.length<0) 
 			textBox.clear();
+			textBox.clear();
 			textBox.sendKeys(message);
 			Gestures.HideKeyboard();
 		}
