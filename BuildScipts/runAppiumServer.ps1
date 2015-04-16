@@ -1,6 +1,7 @@
 
 #przekazaæ jako parametry
 $apkFile='D:\Project\GIT\theShareAndroid-tests\resources\theShare.apk'
+$lofFile="C:\AppiumForm.txt"
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
 $runInDevice=$False
@@ -10,6 +11,7 @@ $resetEmulator=$false
 if($args[0] -ne $null) { $EmulatorName=$args[0] ; $EmulatorName }
 if($args[1] -ne $null) { $apkFile=$args[1] ; $apkFile}
 if($args[2] -ne $null) { $runInDevice=$False ; "Run in device :"+$runInDevice }
+if($args[3] -ne $null) { $lofFile=$args[3] ; "Appium log  :"+$lofFile }
 
 
 $appiumProcess='node'
@@ -30,7 +32,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
 
      if($runInDevice) {$EnDevComand="--device-name "+$deviceName }
 
-    Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log c:\AppiumForm.txt --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
+    Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log "+$lofFile+" --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
     
 	$sleeptime=0
     if($runInDevice) { $sleeptime=8} else {$sleeptime=30}
