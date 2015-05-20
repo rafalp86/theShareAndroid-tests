@@ -35,7 +35,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
      if($runInDevice) {$EnDevComand="--device-name "+$deviceName }
 
     Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --app-wait-activity .activities.WelcomeFragmentActivity --log "+$lofFile+" --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
-	Start-Process -FilePath adb -ArgumentList "logcat *:I > " -RedirectStandardOutput ($lofFile+".LOGCAT")
+	Start-Process -FilePath adb -ArgumentList "logcat   *:E" -RedirectStandardOutput ($lofFile+".LOGCAT")
 	$sleeptime=0
     if($runInDevice) { $sleeptime=5} else {$sleeptime=10}
 	"Wait"+$sleeptime
