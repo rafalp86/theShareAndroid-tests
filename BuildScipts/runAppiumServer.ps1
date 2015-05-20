@@ -1,12 +1,12 @@
 
 #przekazaæ jako parametry
 $apkFile='D:\Project\GIT\theShareAndroid-tests\resources\theShare.apk'
-$lofFile="C:\AppiumForm.txt"
+$lofFile="C:\AppiumLog.txt"
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
-$runInDevice=$False
+$runInDevice=$True
 
-$resetEmulator=$false
+$resetEmulator=$False
 
 if($args[0] -ne $null) { $EmulatorName=$args[0] ; $EmulatorName }
 if($args[1] -ne $null) { $apkFile=$args[1] ; $apkFile}
@@ -16,15 +16,17 @@ if($args[3] -ne $null) { $lofFile=$args[3] ; "Appium log  :"+$lofFile }
 
 $appiumProcess='node'
 $SeleniumProcess='java'
-$emulatorProcess='emulator'
-$AppiumProcessCount=(Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
-$SeleniumProcessCount=(Get-Process | Where {$_.ProcessName -eq $SeleniumProcess} |measure).Count
+$emulatorProcess='emulato*'
+$AppiumProcessCount=(Get-Process | Where {$_.ProcessName -like $appiumProcess} |measure).Count
+$SeleniumProcessCount=(Get-Process | Where {$_.ProcessName -like $SeleniumProcess} |measure).Count
 
 Write-Host $AppiumProcessCount , $SeleniumProcessCount
 
 
     "Stop Appium server"
-     Get-Process | Where {$_.ProcessName -eq $appiumProcess} | foreach{$_.Kill()}
+     Get-Process | Where {$_.ProcessName -like $appiumProcess} | foreach{$_.Kill()}
+     "Kill emulator"
+     Get-Process | Where {$_.ProcessName -like $emulatorProcess} | foreach{$_.Kill()}
 
     "Run Appium server"
     "Appium dir:"+$Env:APPIUM
@@ -33,7 +35,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
      if($runInDevice) {$EnDevComand="--device-name "+$deviceName }
 
     Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --app-wait-activity .activities.WelcomeFragmentActivity --log "+$lofFile+" --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
-
+	Start-Process -FilePath adb -ArgumentList "logcat *:I > " -RedirectStandardOutput ($lofFile+".LOGCAT")
 	$sleeptime=0
     if($runInDevice) { $sleeptime=5} else {$sleeptime=10}
 	"Wait"+$sleeptime
