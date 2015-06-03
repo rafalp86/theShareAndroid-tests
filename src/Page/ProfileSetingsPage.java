@@ -34,11 +34,11 @@ public class ProfileSetingsPage extends UI {
 	  return new LogInPage();
 	}
 	
-	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
-	private By SettingsAboutElement = GetBy.ResourceId("com.example.theshare:id/settings_about");
-	private By SettingsPushElement = GetBy.ResourceId("com.example.theshare:id/settings_push");
-	private By SettingsDailyReminderElement = GetBy.ResourceId("com.example.theshare:id/settings_daily_reminder");
-	private By SettingsBlockedUsersElement = GetBy.ResourceId("com.example.theshare:id/settings_blocked_users");
-	private By SettingsDeleteElement = GetBy.ResourceId("com.example.theshare:id/settings_delete");
-	private By SettingsLogoutElement = GetBy.ResourceId("com.example.theshare:id/settings_logout");
+	private By ContainerElement = GetBy.ResourceId("container");
+	private By SettingsAboutElement = GetBy.ResourceId("settings_about");
+	private By SettingsPushElement = GetBy.ResourceId("settings_push");
+	private By SettingsDailyReminderElement = GetBy.ResourceId("settings_daily_reminder");
+	private By SettingsBlockedUsersElement = GetBy.ResourceId("settings_blocked_users");
+	private By SettingsDeleteElement = GetBy.ResourceId("settings_delete");
+	private By SettingsLogoutElement = GetBy.ResourceId("settings_logout");
 }

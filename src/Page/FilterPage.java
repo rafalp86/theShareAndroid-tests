@@ -42,10 +42,10 @@ public class FilterPage extends UI{
 	}
 	
 	
-	private By action_notificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
-	private By buttonDoneElement = GetBy.ResourceId("com.example.theshare:id/button_done");
-	private By containerElement = GetBy.ResourceId("com.example.theshare:id/container");
-	private By layoutElement = GetBy.ResourceId("com.example.theshare:id/layout");
+	private By action_notificationsElement = GetBy.ResourceId("action_notifications");
+	private By buttonDoneElement = GetBy.ResourceId("button_done");
+	private By containerElement = GetBy.ResourceId("container");
+	private By layoutElement = GetBy.ResourceId("layout");
 	private By FilterPageTitle= GetBy.Text("Filter your feed");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
 	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");

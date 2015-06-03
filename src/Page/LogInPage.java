@@ -100,15 +100,16 @@ public class LogInPage extends UI{
 	}
 	
 	// Elements
-	private By emailElemet= GetBy.ResourceId("com.example.theshare:id/login_email");
-	private String emialResorceId="com.example.theshare:id/login_email";
-	private By passwordElement= GetBy.ResourceId("com.example.theshare:id/login_password");
-	private By loginButton= GetBy.ResourceId("com.example.theshare:id/login_login");
-	private By facebookButton= GetBy.ResourceId("com.example.theshare:id/login_facebook");
-	private By CreateAccountButton= GetBy.ResourceId("com.example.theshare:id/login_create_account");
-	private By LoginResetButton= GetBy.ResourceId("com.example.theshare:id/login_reset_password");
+	private By emailElemet= GetBy.ResourceId("login_email");
+	private String emialResorceId="login_email";
+	private By passwordElement= GetBy.ResourceId("login_password");
+	private By loginButton= GetBy.ResourceId("login_login");
+	private By facebookButton= GetBy.ResourceId("login_facebook");
+	private By CreateAccountButton= GetBy.ResourceId("login_create_account");
+	private By LoginResetButton= GetBy.ResourceId("login_reset_password");
 	private By SlideImage = GetBy.className(Class.ImageView);
-	private By SkippButton= GetBy.ResourceId("com.example.theshare:id/button_skip");//Class.ImageButton);
+	private By SkippButton= GetBy.ResourceId("button_skip");//Class.ImageButton);
+	                                        
 											
 	private By SharingButton= GetBy.ClassAndText(Class.Button, "Start sharing now");
 	private By NotRegistered = GetBy.Text("User with this email is not registered.");

@@ -89,26 +89,26 @@ public class WallPage extends UI{
 	}
 	//
 	// Wygenerowane prze skrypt , do sprawdzenia , poprawnoœæ
-	private By NotificationsElement = GetBy.ResourceId("com.example.theshare:id/action_notifications");
+	private By NotificationsElement = GetBy.ResourceId("action_notifications");
 	private By ShareButtont = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
 	private By MainProfileElement = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,
 	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
 	private By MainFilterFeedElement = GetBy.className(Class.ImageButton); // po ID nie dzia³a ,;
 	
-	private By ContainerElement = GetBy.ResourceId("com.example.theshare:id/container");
-	private By MainSwipeLayoutElement = GetBy.ResourceId("com.example.theshare:id/main_swipe_layout");
-	private By MainListElement = GetBy.ResourceId("com.example.theshare:id/main_list");
-	private By MessageAvatarElement = GetBy.ResourceId("com.example.theshare:id/message_avatar");
-	private By MessageAutorElement = GetBy.ResourceId("com.example.theshare:id/message_name");
-	private By MessageDataElement = GetBy.ResourceId("com.example.theshare:id/message_when");
-	private By MessageFlagElement = GetBy.ResourceId("com.example.theshare:id/message_flag");
-	private By MessageContentElement = GetBy.ResourceId("com.example.theshare:id/message_content");
-	private By ImageFrameElement = GetBy.ResourceId("com.example.theshare:id/image_frame");
-	private By ImageElement = GetBy.ResourceId("com.example.theshare:id/image");
-	private By MessageResponseElement = GetBy.ResourceId("com.example.theshare:id/message_response");
-	private By MessageRelateIconElement = GetBy.ResourceId("com.example.theshare:id/message_relate_icon");
-	private By MessageRelateTextElement = GetBy.ResourceId("com.example.theshare:id/message_relate_text");
-	private By MessageRespondElement = GetBy.ResourceId("com.example.theshare:id/message_respond");
+	private By ContainerElement = GetBy.ResourceId("container");
+	private By MainSwipeLayoutElement = GetBy.ResourceId("main_swipe_layout");
+	private By MainListElement = GetBy.ResourceId("main_list");
+	private By MessageAvatarElement = GetBy.ResourceId("message_avatar");
+	private By MessageAutorElement = GetBy.ResourceId("message_name");
+	private By MessageDataElement = GetBy.ResourceId("message_when");
+	private By MessageFlagElement = GetBy.ResourceId("message_flag");
+	private By MessageContentElement = GetBy.ResourceId("message_content");
+	private By ImageFrameElement = GetBy.ResourceId("image_frame");
+	private By ImageElement = GetBy.ResourceId("image");
+	private By MessageResponseElement = GetBy.ResourceId("message_response");
+	private By MessageRelateIconElement = GetBy.ResourceId("message_relate_icon");
+	private By MessageRelateTextElement = GetBy.ResourceId("message_relate_text");
+	private By MessageRespondElement = GetBy.ResourceId("message_respond");
 
 	
 	

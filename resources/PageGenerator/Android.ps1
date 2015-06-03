@@ -8,7 +8,7 @@ if (($resourceList | Measure-Object).Count -eq 0) { return "Brak rezultatów " }
 
 $Resultfile='.\result.txt'
 foreach ($resorec in $resourceList)
-{ #private By LoginResetButton= GetBy.ResourceId("com.example.theshare:id/login_reset_password");
+{ #private By LoginResetButton= GetBy.ResourceId("login_reset_password");
     'private By '+$resorec.Value.Split('/')[1] +'Element = GetBy.ResourceId("'+$resorec.Value+'");' 
 }
 

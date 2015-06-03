@@ -67,12 +67,12 @@ public class AddPostPage extends UI {
 		return ElementExist(SelectFollower);
 	}
 	//ELEMENTS
-	private By DoneButton= GetBy.ResourceId("com.example.theshare:id/button_done");	
-	private By ComposeTextArea= GetBy.ResourceId("com.example.theshare:id/compose_text");	
+	private By DoneButton= GetBy.ResourceId("button_done");	
+	private By ComposeTextArea= GetBy.ResourceId("compose_text");	
 	private By TitleElemet= GetBy.ResourceId("android:id/action_bar_title");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
 	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");
-	private By SelectFollower= GetBy.ResourceId("com.example.theshare:id/select_followers");	 
+	private By SelectFollower= GetBy.ResourceId("select_followers");	 
 	
 	
 	//Choose  source Dialog

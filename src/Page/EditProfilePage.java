@@ -46,11 +46,11 @@ public class EditProfilePage extends UI{
 	}
 	
 	private By TitleElement = GetBy.ResourceId("android:id/action_bar_title");
-	private By EditImageElement = GetBy.ResourceId("com.example.theshare:id/edit_profile_change_image");
-	private By EditProfileNameElement = GetBy.ResourceId("com.example.theshare:id/edit_profile_username");
-	private By AboutYouProfile = GetBy.ResourceId("com.example.theshare:id/edit_profile_about_you");
-	private By EditLocationElement = GetBy.ResourceId("com.example.theshare:id/edit_profile_location");
-	private By EditEmailElement = GetBy.ResourceId("com.example.theshare:id/edit_profile_email");
-	private By SaveElement = GetBy.ResourceId("com.example.theshare:id/btn_save");
+	private By EditImageElement = GetBy.ResourceId("edit_profile_change_image");
+	private By EditProfileNameElement = GetBy.ResourceId("edit_profile_username");
+	private By AboutYouProfile = GetBy.ResourceId("edit_profile_about_you");
+	private By EditLocationElement = GetBy.ResourceId("edit_profile_location");
+	private By EditEmailElement = GetBy.ResourceId("edit_profile_email");
+	private By SaveElement = GetBy.ResourceId("btn_save");
 
 }
