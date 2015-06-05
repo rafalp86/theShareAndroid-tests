@@ -68,12 +68,11 @@ public class YourProfilePage extends UI {
 	private By MessageBytext(String text) {return GetBy.ClassAndText(Class.TextView, text) ;}
 	private By MessageDeleteButon = GetBy.ResourceId("message_delete");
 	private By ActionSettingsElement = GetBy.ResourceId("action_settings");
-	private By PageTitleLeabel = GetBy.ResourceId("android:id/action_bar_title");
+	private By PageTitleLeabel = GetBy.ResourceIdOnly("android:id/action_bar_title");
 	private By ProfileVideosElement = GetBy.ResourceId("profile_videos");
 	private By ProfileFollowingElement = GetBy.ResourceId("profile_following");
 	private By ProfileFollowersElement = GetBy.ResourceId("profile_followers");
 
-	
 	private By ContainerElement = GetBy.ResourceId("container");
 	private By MainSwipeLayoutElement = GetBy.ResourceId("main_swipe_layout");
 	private By ProfileUserDataElement = GetBy.ResourceId("profile_user_data");

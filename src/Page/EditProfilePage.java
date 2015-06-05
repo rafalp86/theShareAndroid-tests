@@ -45,7 +45,7 @@ public class EditProfilePage extends UI{
 			return ElementExist(TitleElement);
 	}
 	
-	private By TitleElement = GetBy.ResourceId("android:id/action_bar_title");
+	private By TitleElement = GetBy.ResourceIdOnly("android:id/action_bar_title");
 	private By EditImageElement = GetBy.ResourceId("edit_profile_change_image");
 	private By EditProfileNameElement = GetBy.ResourceId("edit_profile_username");
 	private By AboutYouProfile = GetBy.ResourceId("edit_profile_about_you");

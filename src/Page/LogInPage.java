@@ -21,7 +21,7 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
-		//Gestures.ScrollToTop(Class.Button);
+		System.out.println("LogInPage");
 		WaitForElement(emailElemet, 5);
 		SetText(emailElemet, email_acount);
 		return this;
@@ -96,7 +96,7 @@ public class LogInPage extends UI{
 	}
 	public boolean NotRegisteredMessageIsPresent()
 	{
-		return ElementExist(NotRegistered,10);
+		return ElementExist(NotRegistered,3);
 	}
 	
 	// Elements

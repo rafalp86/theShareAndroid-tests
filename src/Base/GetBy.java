@@ -37,6 +37,10 @@ public class GetBy  {
  	 {
 		 return By.xpath("//*[@resource-id='com.theshare.shareapp:id/" + resorceid + "']");
  	 }
+	 public static By ResourceIdOnly(String resorceid)
+ 	 {
+		 return By.xpath("//*[@resource-id='" + resorceid + "']");
+ 	 }
      
      
 	}

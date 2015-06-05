@@ -4,8 +4,7 @@ $apkFile='D:\Project\GIT\theShareAndroid-tests\resources\theShare.apk'
 $lofFile="C:\AppiumLog.txt"
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
-$runInDevice=$False
-
+$runInDevice=$True
 $resetEmulator=$False
 
 if($args[0] -ne $null) { $EmulatorName=$args[0] ; $EmulatorName }

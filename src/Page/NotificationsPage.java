@@ -16,5 +16,5 @@ public class NotificationsPage extends UI {
 	}
 	
 	//BY
-	private By NotificationPageTitle = GetBy.ResourceId("android:id/action_bar_title");
+	private By NotificationPageTitle = GetBy.ResourceIdOnly("android:id/action_bar_title");
 }

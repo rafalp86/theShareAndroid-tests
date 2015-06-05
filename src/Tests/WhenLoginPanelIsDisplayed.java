@@ -43,7 +43,8 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 		loginView.SetEmail("ReginstedEmail@fs.com")
 				 .SetPassword(appConfig.get("Password"))
 				 .TapLoginFailed();
-		//Assert.assertTrue(loginView.NotRegisteredMessageIsPresent(), "Can't see [User with this email is not registered]");
+		Assert.assertTrue(loginView.LoginButtonIsPresent(), "Loged to app but credentials are incorrect");
+	
 		
 	}
 	

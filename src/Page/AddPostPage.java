@@ -69,7 +69,7 @@ public class AddPostPage extends UI {
 	//ELEMENTS
 	private By DoneButton= GetBy.ResourceId("button_done");	
 	private By ComposeTextArea= GetBy.ResourceId("compose_text");	
-	private By TitleElemet= GetBy.ResourceId("android:id/action_bar_title");
+	private By TitleElemet= GetBy.ResourceIdOnly("android:id/action_bar_title");
 	private By FilterByText(String Text){return GetBy.ClassAndText(Class.TextView, Text);}
 	private By AllCheckedFillter= By.xpath("//"+Class.CheckBox+"[@checked='true']");
 	private By SelectFollower= GetBy.ResourceId("select_followers");	 

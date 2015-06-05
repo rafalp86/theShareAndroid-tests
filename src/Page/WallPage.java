@@ -11,38 +11,29 @@ public class WallPage extends UI{
 
 	
 	
-	// do usuniêcia po fixie
-	private void CloseGoogleService()
-	{
-		//if (ElementExist(GetBy.Text("Get Google Play services"), 1)) Back();
-	}
+	
 	
 	public WallPage  TapMessageRespond(){
-		 CloseGoogleService();
 		  Click(MessageRespondElement);
 		  return this;
 	}
 	public FilterPage  TapFilterFeed(){
-		  CloseGoogleService();
 		  WebElement FilterFeed= Finds(MainFilterFeedElement).get(0);
 		  FilterFeed.click();
 		  return new FilterPage();
 	}
 	public AddPostPage  TapShare(){
-		   CloseGoogleService();
 		   WebElement share= Finds(ShareButtont).get(1);
 		   share.click();
 		   
 		  return new AddPostPage();
 	}
 	public YourProfilePage  TapYourProfile(){
-		  CloseGoogleService();
 		  WebElement YourProfile= Finds(MainProfileElement).get(2);
 		  YourProfile.click();
 		  return new YourProfilePage();
 	}
 	public NotificationsPage  TapNotifications(){
-		  CloseGoogleService();
 		  Click(NotificationsElement);
 		  return new NotificationsPage();
 	}
@@ -50,17 +41,14 @@ public class WallPage extends UI{
 	//  Element Is Present
 	public boolean ShareElementIsPresent()
 	{
-		CloseGoogleService();
-		return ElementExist(ShareButtont,1);
+		return ElementExist(ShareButtont,3);
 	}
 	public boolean YourProfileIsPresent()
 	{
-		CloseGoogleService();
 		return ElementExist(MainProfileElement);
 	}
 	public boolean NotificationElementIsPresent()
 	{
-		CloseGoogleService();
 		return ElementExist(NotificationsElement);
 	}
 	public boolean NotificationElementIsPresentWithoutGoogle()
@@ -69,22 +57,18 @@ public class WallPage extends UI{
 	}
 	public boolean MessageAutorIsPresent()
 	{
-		CloseGoogleService();
 		return ElementExist(MessageAutorElement);
 	}
 	public boolean MessageRespondIsPresent()
 	{
-		CloseGoogleService();
 		return ElementExist(MessageRespondElement);
 	}
 	public boolean MessageDataIsPresent()
 	{
-		CloseGoogleService();
 		return ElementExist(MessageDataElement);
 	}
 	public boolean MessageIsPresent(String MessageText)
 	{
-		CloseGoogleService();
 		return ElementExist(MessageBytext(MessageText),7);
 	}
 	//

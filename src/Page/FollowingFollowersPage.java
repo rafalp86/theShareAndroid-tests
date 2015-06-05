@@ -31,7 +31,7 @@ public class FollowingFollowersPage extends UI {
 	
 	private By FollowingElement = GetBy.ClassAndText(Class.Button, "Following");
 	private By FollowElement = GetBy.ClassAndText(Class.Button, "Follow");
-	private By TitleElement = GetBy.ResourceId("android:id/action_bar_title");
+	private By TitleElement = GetBy.ResourceIdOnly("android:id/action_bar_title");
 	
 
 
