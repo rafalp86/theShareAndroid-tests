@@ -21,9 +21,8 @@ public class LogInPage extends UI{
 	
 	public LogInPage SetEmail(String email_acount)
 	{
-		System.out.println("LogInPage");
 		WaitForElement(emailElemet, 5);
-		SetText(emailElemet, email_acount);
+		SetTextAndCheckValue(emailElemet, email_acount);
 		return this;
 	}
 	public LogInPage SetPassword(String password_acount)

@@ -151,7 +151,6 @@ public class UI extends ShareBase {
 	 public static void SetText(By element, String message,Boolean ... ClearContent) {
 		    System.out.println("Set tekst in "+ element+" ="+message);
 			WebElement textBox= Find(element);
-			//if(ClearContent.length<0) 
 			textBox.clear();
 			textBox.clear();
 			textBox.sendKeys(message);
@@ -170,7 +169,20 @@ public class UI extends ShareBase {
 			((JavascriptExecutor) driver).executeScript("$('[resource-id~=\""+argumentValue+"\"]').val('"+text+"')");
 		}
 	
-	 
+	    public static void SetTextAndCheckValue(By element, String message)
+	    {
+	    	for (int i=0 ;i<5 ;i++)
+	    	{
+	    		System.out.println("Set tekst and check value  "+i+" in:"+ element+" ="+message);
+	    		WebElement textBox= Find(element);
+	    		if (GetText(element).equals(message))
+	    			break; 
+	    		
+	    	 textBox.sendKeys(message);
+			 Gestures.HideKeyboard();
+	    	}
+	    	
+	    }
 	 public enum Class
 	 	{
 	    	  Button("android.widget.Button"),

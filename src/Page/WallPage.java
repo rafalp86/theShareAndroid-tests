@@ -23,12 +23,14 @@ public class WallPage extends UI{
 		  return new FilterPage();
 	}
 	public AddPostPage  TapShare(){
+		   WaitForElement(ShareButtont, 5);
 		   WebElement share= Finds(ShareButtont).get(1);
 		   share.click();
 		   
 		  return new AddPostPage();
 	}
 	public YourProfilePage  TapYourProfile(){
+		  WaitForElement(MainProfileElement, 5);
 		  WebElement YourProfile= Finds(MainProfileElement).get(2);
 		  YourProfile.click();
 		  return new YourProfilePage();

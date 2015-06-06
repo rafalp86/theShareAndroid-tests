@@ -37,7 +37,7 @@ public class WhenUserDisplayedYourProfilePage extends ShareBase {
 		Assert.assertTrue(ProfileView.FollowersIsPresent(), "Can't see see [Followers] ");
 		Assert.assertTrue(ProfileView.VideosIsPresent(), "Can't see see [Videos] ");
 	}
-	@Test
+	//@Test
 	public void AddFollowingShouldIncreaseCounter()
 	{ 
 		int currentCount= ProfileView.GetFollowingCounter();
