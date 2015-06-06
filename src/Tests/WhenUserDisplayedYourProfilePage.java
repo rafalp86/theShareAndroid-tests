@@ -16,7 +16,11 @@ public class WhenUserDisplayedYourProfilePage extends ShareBase {
     public void setUp()
 	 {
 		ConnectionWithApplication("WhenUserDisplayedYourProfilePage");
-		ProfileView =GoTo.YourProfile();
+		ProfileView =GoTo.YourProfile().TapProfileFollowing()
+				.TapAnyFollow()
+				.TapBack().TapProfileFollowing()
+				.TapAnyFollow()
+				.TapBack();	
 	 }
 	
 	@Test
