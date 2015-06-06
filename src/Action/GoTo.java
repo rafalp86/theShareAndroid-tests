@@ -28,9 +28,7 @@ public class GoTo extends UI {
 		
 		return (new LogInPage())
 				.TapXSkip()
-				.SetEmail(appConfig.get("Email"))
-				.SetPassword(appConfig.get("Password"))
-				.TapLogin();
+				.LoginToApp();
 	}
 	public static YourProfilePage YourProfile()
 	{

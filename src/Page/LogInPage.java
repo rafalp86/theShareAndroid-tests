@@ -63,6 +63,20 @@ public class LogInPage extends UI{
 		Click(loginButton);
 		return new WallPage();
 	}
+	public WallPage LoginToApp()
+	{
+		for(int i=0;i<5;i++)
+		{	
+			System.out.println("Login to app :"+i);
+		boolean ShareButtonIsPresent=
+				this.SetEmail(appConfig.get("Email"))
+		 .SetPassword(appConfig.get("Password"))
+		 .TapLogin().ShareElementIsPresent();
+		if(ShareButtonIsPresent) break;
+		}
+
+		return new WallPage();
+	}
 	public LogInPage TapLoginFailed()
 	{
 		Click(loginButton);

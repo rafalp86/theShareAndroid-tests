@@ -16,11 +16,13 @@ public class WhenUserDisplayedYourProfilePage extends ShareBase {
     public void setUp()
 	 {
 		ConnectionWithApplication("WhenUserDisplayedYourProfilePage");
-		ProfileView =GoTo.YourProfile().TapProfileFollowing()
+		ProfileView =GoTo.YourProfile();
+		if(ProfileView.GetFollowingCounter()==0)
+		{
+			ProfileView.TapProfileFollowing()
 				.TapAnyFollow()
-				.TapBack().TapProfileFollowing()
-				.TapAnyFollow()
-				.TapBack();	
+				.TapBack();
+		}
 	 }
 	
 	@Test
@@ -41,7 +43,7 @@ public class WhenUserDisplayedYourProfilePage extends ShareBase {
 		Assert.assertTrue(ProfileView.FollowersIsPresent(), "Can't see see [Followers] ");
 		Assert.assertTrue(ProfileView.VideosIsPresent(), "Can't see see [Videos] ");
 	}
-	//@Test
+	@Test
 	public void AddFollowingShouldIncreaseCounter()
 	{ 
 		int currentCount= ProfileView.GetFollowingCounter();

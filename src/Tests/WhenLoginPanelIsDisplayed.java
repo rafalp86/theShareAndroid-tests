@@ -51,9 +51,7 @@ public class WhenLoginPanelIsDisplayed extends ShareBase {
 	@Test
 	public void ShouldLogWhenUserEnterCorrectData()
 	{
-		WallPage HomeView= loginView.SetEmail(appConfig.get("Email"))
-				 .SetPassword(appConfig.get("Password"))
-				 .TapLogin();
+		WallPage HomeView= loginView.LoginToApp();
 		Assert.assertTrue(HomeView.ShareElementIsPresent(), "Can't see [ShareElement]");
 		
 	}
